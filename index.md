@@ -3,6 +3,7 @@
 ## 01
 [tasks](tasks.md) -- things to be done _yesterday_!!!
 [scratchpad](scratchpad.md) -- various temporary stuff
+[arch warnings](archlinux-warnings.md) --
 
 ## Shell
 [01 shell](shell) -- sources

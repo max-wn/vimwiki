@@ -1,18 +1,17 @@
 ## pacman cheatsheet
 
-### Commands
-
-#### Common commands
+### Common commands
 
 | Command                 | Description                       |
 | ----------------------- | --------------------------------- |
 | `pacman -Syu <pkg>`     | Install (and update package list) |
 | `pacman -S <pkg>`       | Install only                      |
 | `pacman -Rs <pkg>`      | Uninstall                         |
-| `pacman -Ss <keywords>` | Search                            |
+| `pacman -Ss <keywords>` | Search in repo                    |
+| `pacman -Qs <keywords>` | Search on PC                      |
 | `pacman -Syu`           | Upgrade everything                |
 
-#### Query
+### Query
 
 | Command              | Description                            |
 | -------------------- | -------------------------------------- |
@@ -25,7 +24,7 @@
 | ---                  | ---                                    |
 | `pacman -Qs <query>` | Search installed packages for keywords |
 
-#### Orphans
+### Orphans
 
 | Command                       | Description                 |
 | ----------------------------- | --------------------------- |
@@ -40,6 +39,18 @@ Avoid orphans by using `pacman -Rsc` to remove packages, which will remove unnee
 | ------------------ | -------------------------- |
 | `pactree <pkg>`    | What does _pkg_ depend on? |
 | `pactree -r <pkg>` | What depends on _pkg_?     |
+
+### Some explanations
+
+Uncomment Color and VerbosePkgLists lines in file:
+```bash
+vim /etc/pacman.conf
+```
+
+This will refresh your databases even if they are already up to date. I have found this to rarely be necessary, even when updating my mirrorlist or adding custom repos. Could be used when your database was corrupted, and that happens exactly very rarely in Arch.
+```bash
+sudo pacman -Syyu
+```
 
 ### References
 
