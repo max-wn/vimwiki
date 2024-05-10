@@ -1,21 +1,30 @@
 ## rsync cheatsheet
 
+### links
+https://rsync.samba.org/            # oficial site
+https://wiki.archlinux.org/title/Rsync  # archwiki
+
 ### Basic example
 
 ```bash
-rsync -avz ./src /dest   # syncing folder src into dest:
-rsync -avz ./src/ /dest  # syncing the content of src into dest:
+rsync -avz ./src /dest    # syncing folder src into dest:
+rsync -avz ./src/ /dest/  # syncing the content of src into dest:
 
 # syncing the content of src into dest dir (examples):
 
 ## Recursively copy directories, use archive mode, resolve symlinks and skip files that are newer on the destination:
 rsync --recursive --archive --update --copy-links path/to/src path/to/dest
-
-sudo rsync -aAXvzP --delete \
-    ~/name_of_user/documents_1/ /media/name_of_user/USB_8GB/docs1_backup/
-sudo rsync -aAXvzP --delete \
-    ~/name_of_user/documents_2/ /media/name_of_user/WD_Passport/docs2_backup/
-rsync -rtvzP /path/to/file root@example.org:/path/on/the/server
+## my script
+sudo rsync -avzPuh --delete \
+    ~/name_of_user/documents_1/ \
+    /media/name_of_user/USB_8GB/docs1_backup/
+sudo rsync -avzPuh --delete \
+    ~/name_of_user/documents_2/ \
+    /media/name_of_user/WD_Passport/docs2_backup/
+## rsync over ssh
+rsync -avz /path/to/file root@example.org:/path/on/the/server
+## rsync to USB
+rsync -avp /path/to/src /mount point/path/to/dest
 
     -a  # archive (-rlptgoD), where:
         -r, --recursive
@@ -30,7 +39,7 @@ rsync -rtvzP /path/to/file root@example.org:/path/on/the/server
     -v  # verbose
     -z  # compress file data during the transfer and decompress on destination
     -P  # same as --partial --progress
-
+    -h, --human-readable # human readable
     -r  # recursive
     -t  # transfer modification times, which allows skipping files that have not been modified on future uploads
     -x  # this tells rsync to avoid crossing a filesystem boundary when recursing
@@ -96,7 +105,7 @@ rsync -rtvzP /path/to/file root@example.org:/path/on/the/server
 ```
 
 ```bash
---exclude-from=FILE
+--exclude-from=FILE  # read exclude patterns from file
 --include-from=FILE
 --files-from=FILE    # read list of filenames from FILE
 ```

@@ -9,6 +9,7 @@
 [01 shell](shell) -- sources
 [02 shell tips](shell-tips.md)
 [chmod](chmod.md) -- manage permissions
+[emojy-and-utf8](emoji-and-utf8.md) --
 [find](find.md) --
 [mount usb](mount-usb.md) -- mount USB
 [shred](shred.md) -- safely delete files

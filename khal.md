@@ -4,9 +4,9 @@
 khal
 https://archlinux.org/packages/?sort=&q=khal&maintainer=&flagged=  # pacage info
 https://github.com/pimutils/khal  # github
+https://khal.readthedocs.io/en/latest/  # documentation
 https://formulae.brew.sh/formula/khal#default  # brew
-https://khal.readthedocs.io/en/latest/configure.html  # instructions
-vdirsyncer
+https://khal.readthedocs.io/en/latest/configure.html  # instructions vdirsyncer
 https://vdirsyncer.pimutils.org/en/stable/tutorial.html  # syncroniser tuturilal
 https://github.com/pimutils/vdirsyncer  # github
 

@@ -83,6 +83,11 @@ Example of mount command:
 mount /dev/disk/by-id/usb-COWON_J3_0221001E55027D511123241626337D51-0:0 /mnt/usbstick
 ```
 
+To chnge owership:
+```bash
+chown -R $USER ~/path/to/file
+```
+
 ### Encrypt USB
 #### links
 https://wiki.archlinux.org/title/Cryptsetup
@@ -90,14 +95,14 @@ https://videos.lukesmith.xyz/w/qxMiq53aTieALZwumuxG6G
 https://wiki.archlinux.org/title/Btrfs
 
 #### Commands
-execute as sudo
+
 ```bash
-cryptsetup luksFormat /dev/sda2        # create a new LUKS container on sda2
-cryptsetup open /dev/sda2 drive        # create / open directory with name "drive"
-mkfs.btrfs /dev/mapper/drive           # create file system. use "mapper" instead of "sda"! execut only once at startup
-mount /dev/mapper/drive /mnt/usbstick  # mout USB
-umount /dev/usbstick                   # unmount USB
-cryptsetup close drive                 # close secret drive
+sudo cryptsetup luksFormat /dev/sda2        # create a new LUKS container on sda2
+sudo cryptsetup open /dev/sda2 drive        # create / open directory with name "drive"
+sudo mkfs.btrfs /dev/mapper/drive           # create file system. use "mapper" instead of "sda"! execut only once at startup
+sudo mount /dev/mapper/drive /mnt/usbstick  # mout USB
+sudo umount /mnt/usbstick                   # unmount USB
+sudo cryptsetup close drive                 # close secret drive
 ```
 
 ---
