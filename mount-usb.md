@@ -13,15 +13,15 @@ Options:
 `-s` show progress
 `-v` be "verbose" and output bad sectors detected to stdout
 
-`mkfs.ext4 -c -L /dev/sda2`
+`mkfs.ext4 -c -L FLASH-EXT4 /dev/sda2`
 `-c` Check the device for bad blocks before creating the file system. If this option is specified twice `cc`, then a slower read-write test is used instead of a fast read-only test.
-`-L` Specifies the volume label to be associated with the exFAT filesystem.
+`-L` Specifies the volume label to be associated with the filesystem.
 
 `mkfs.exfat -L FLASH-EXFAT /dev/sda2`
-`-L` Specifies the volume label "FLASH-EXFAT" to be associated with the exFAT filesystem.
+`-L` Specifies the volume label "FLASH-EXFAT" to be associated with the filesystem.
 
 `mkfs.btrfs -L FLASH-BTRFS /dev/sda2`
-`-L` Specifies the volume label "FLASH-BTRFS" to be associated with the exFAT filesystem.
+`-L` Specifies the volume label "FLASH-BTRFS" to be associated with the filesystem.
 
 ### Mount USB
 
@@ -93,6 +93,7 @@ chown -R $USER ~/path/to/file
 https://wiki.archlinux.org/title/Cryptsetup
 https://videos.lukesmith.xyz/w/qxMiq53aTieALZwumuxG6G
 https://wiki.archlinux.org/title/Btrfs
+https://wiki.archlinux.org/title/Dm-crypt/Device_encryption#Cryptsetup_usage
 
 #### Commands
 
@@ -103,6 +104,32 @@ sudo mkfs.btrfs /dev/mapper/drive           # create file system. use "mapper" i
 sudo mount /dev/mapper/drive /mnt/usbstick  # mout USB
 sudo umount /mnt/usbstick                   # unmount USB
 sudo cryptsetup close drive                 # close secret drive
+```
+
+!!! if you will hav errors with btrfs try to wipe dada on volume:
+See link, chapter "Previously used partitions"
+https://man.archlinux.org/man/cryptsetup.8
+
+```bash
+sudo wipefs --all --no-act /dev/sda*  # dry run
+sudo wipefs --all /dev/sda*           # wipe recursively
+```
+
+### usage of veracrypt via cryptsetup
+https://wiki.archlinux.org/title/VeraCrypt
+
+```bash
+sudo cryptsetup --type tcrypt open path/to/container Backup  # open veracrypt container and named it 'Backup'
+sudo mount /dev/mapper/Backup /mnt/usbstick/  # mount it
+sudo umount /mnt/usbstick  # unmount
+sudo cryptsetup close Backup  # close veracrypt container
+```
+
+### misc
+If you need to know which type of FAT file system a partition uses, use the file command:
+
+```bash
+sudo file -s /dev/partition
 ```
 
 ---

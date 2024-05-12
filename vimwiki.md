@@ -128,6 +128,15 @@ resources using absolute or relative paths:
 These links are opened with the system command, i.e. !xdg-open (Linux), !open
 (Mac), or !start (Windows).
 
+### VimwikiSearch /pattern/
+`:VWS /pattern/`
+    Search for `/pattern/` in all files of current wiki.
+    To display all matches use `|:lopen|` command.
+    To display next match use `|:lnext|` command.
+    To display previous match use `|:lprevious|` command.
+
+
+
 ---
 
 [[/index|Get Back To Index]]

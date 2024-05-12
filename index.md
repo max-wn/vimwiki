@@ -77,6 +77,7 @@
 [tldr](tldr.md) -- community-driven man pages
 [urlscan](urlscan.md) -- [mutt](mutt) and terminal url selector
 [urlview](urlview.md) -- a curses URL parser for text files
+[veracrypt](veracrypt.md) --
 [vim](vim.md) -- terminal text editor
 [vimplug](vimplug.md) -- a minimalist Vim plugin manager
 [vimwiki](vimwiki.md) -- personal wiki for Vim
