@@ -25,7 +25,9 @@ ssh-copy-id -i ~/.ssh/id_ed25519.pub name@host-ip  # copy ssh key to host
 sudo systemctl stop sshd        # stop ssh dimon
 sudo systemctl disable sshd
 sudo systemctl enable sshd
-
+journalctl -fu sshd  # see logs of ssh where:
+	             # -f -> follow
+		     # -u -> unit (here unit is sshd)
 ```
 
 ```bash

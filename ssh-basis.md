@@ -49,44 +49,36 @@ and on remote `sudo apt install openssh-server`
 
 on Archlinux you install on local and remote `sudo pacman -S openssh`
 
-### Github SSH workflow
+### Add SSH to Github
 
 Generate key
 
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"  # generate key
 eval "$(ssh-agent -s)"  # Start the ssh-agent in the background
-vim ~/.ssh/config       # check to see if your ~/.ssh/config file exists
-                        # in the default location
-touch ~/.ssh/config     # If the file doesn't exist, create the file
-```
-
-Open your `~/.ssh/config` file, then modify the file to contain the following
-lines
-
-```
-Host *
-  AddKeysToAgent yes UseKeychain yes
-  IdentityFile ~/.ssh/id_ed25519
-```
-
-Add your SSH ***private*** key to the ssh-agent and store your passphrase in the
-keychain
-
-```bash
-ssh-add -K ~/.ssh/id_ed25519
+ssh-add ~/.ssh/id_ed25519  # Add your SSH ***private*** key to the ssh-agent
 ```
 
 Adding a new  ***public*** SSH key to your GitHub account and test connection
 
 ```bash
-pbcopy < ~/.ssh/id_ed25519.pu  # Copy the SSH public key to your clipboard
-                               # and paste it to SSH settings on github site
-ssh -T git@github.com          # testing your SSH connection
+pbcopy < ~/.ssh/id_ed25519.pub  # Copy the SSH public key to your clipboard and paste it to SSH settings on github site
+# or via github cli
+gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
+ssh -T git@github.com           # testing your SSH connection
 ```
 
-Verify that the fingerprint in the message you see matches [GitHub's RSA
-public key fingerprint][001]. If it does, then type `yes`
+Verify that the fingerprint in the message you see matches [GitHub's RSA public key fingerprint][001]. If it does, then type `yes`
+
+
+### ssh without password for one session only
+```bash
+eval "$(ssh-agent)"        # Start the ssh-agent in the background
+ssh-add ~/.ssh/id_ed25519  # add key to ssh agent memory
+# agent stops when you close a terminal
+```
+
+
 
 ---
 

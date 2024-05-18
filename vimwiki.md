@@ -4,6 +4,7 @@
 https://github.com/vimwiki/vimwiki/tree/dev
 https://vimwiki.github.io/
 https://vimwiki.github.io/vimwikiwiki/Tips%20and%20Snips.html
+https://samgriesemer.com/Vimwiki
 
 ### basis
 `vim -c VimwikiIndex`  open vimwiki from terminal

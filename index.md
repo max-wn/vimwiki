@@ -19,6 +19,7 @@
 [abook](abook.md) -- text-based addressbook designed for use with mutt
 [alacritty](alacritty.md) --
 [brew](brew.md) --
+[bleachbit](bleachbit.md) -- deletes unneeded files to free disk space and maintain privacy
 [calcurse](calcurse.md) -- a text-based personal organizer
 [calibre](calibre.md) -- ebook library
 [cheat.sh](cheatsh.md) -- community driven cheat sheets
@@ -73,6 +74,7 @@
 [sdcv](sdcv.md) -- command line dictionary
 [slack](slack.md) --
 [ssh](ssh.md) -- for encrypted communication sessions
+[taskwarrior](taskwarrior.md) --
 [taskwiki](taskwiki.md) -- project management in vim for VimWiki and Taskwarrior
 [tldr](tldr.md) -- community-driven man pages
 [urlscan](urlscan.md) -- [mutt](mutt) and terminal url selector
