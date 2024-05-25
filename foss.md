@@ -28,6 +28,11 @@ description
 
 ### Web Browsers
 * [BRAVE](https://brave.com/) - alternative brawser for the World Wide Web
+* [FIREFOX](https://wiki.archlinux.org/title/Firefox) - main browser
+* [BRAVE](https://brave.com/) - alternative brawser
+* [LYNX](https://archlinux.org/packages/extra/x86_64/lynx/) - A text browser for the World Wide Web
+* [URLSCAN](https://github.com/firecat53/urlscan) - Mutt and terminal url selector
+
 
 ### Image Modification
 * [KRITA](https://krita.org) — это виртуальный холст, и без планшета там будет
@@ -46,15 +51,29 @@ description
 ### 2fa
 * [OTP AUTH](https://cooperrs.de/otpauth.html) - iOS app for 2fa by Roland Moers
 
+### File manager
+* MC (MIDNIGHT COMMANDER)
+
+### Mail client
+* MUTT
+
 ### Music/audio player
 * MPD with NCMPCPP for a library
+* MPV for playing songs manually
 * MOCP for playing songs manually
+
+### Video player
+* MPV
+
+### RSS reader
+* [NEWSBOAT](https://newsboat.org/)
 
 ### Video and Audio
 * BLENDER
 
 ### Writing documents
 * MARKDOWN
+* LATEX
 * PANDOC - for document conversion and compiling markdown to .pdfs
 
 ### Presentations
@@ -79,7 +98,7 @@ description
   circuits and their conversion to PCB (printed circuit board).
 
 ### Excel-like spreadsheets
-* [sc-im](https://github.com/andmarti1424/sc-im) - vim-like spreadsheet calculator
+* [sc-im](https://github.com/andmarti1424/sc-im) - [vim like](vim-like) spreadsheet calculator
 
 
 ### see also

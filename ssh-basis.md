@@ -76,6 +76,7 @@ Verify that the fingerprint in the message you see matches [GitHub's RSA public 
 eval "$(ssh-agent)"        # Start the ssh-agent in the background
 ssh-add ~/.ssh/id_ed25519  # add key to ssh agent memory
 # agent stops when you close a terminal
+ssh-add -l  # list fingerprints of currently loaded keys:
 ```
 
 

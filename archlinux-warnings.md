@@ -6,6 +6,7 @@ https://aicsx.github.io/ax/blog/2022/01/07/Possibly-missing-firmware-for-module.
 
 2. ==> WARNING: consolefont: no font found in configuration
 
+https://wiki.archlinux.org/title/Linux_console#Fonts
 https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration
 https://aicsx.github.io/ax/blog/2022/01/08/consolefont-no-font-found-in-configuration.html
 

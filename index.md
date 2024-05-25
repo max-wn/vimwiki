@@ -1,9 +1,10 @@
 # MY KNOWLEDGE BASE
 
 ## 01
-[tasks](tasks.md) -- things to be done _yesterday_!!!
-[scratchpad](scratchpad.md) -- various temporary stuff
+[arch installation guie](archlinux.md) --
 [arch warnings](archlinux-warnings.md) --
+[scratchpad](scratchpad.md) -- various temporary stuff
+[tasks](tasks.md) -- things to be done _yesterday_!!!
 
 ## Shell
 [01 shell](shell) -- sources
@@ -16,10 +17,11 @@
 
 ## FOSS
 [01 foss](foss.md) -- Software I Use
+[02 security tips](sectips.md) -- initial database
 [abook](abook.md) -- text-based addressbook designed for use with mutt
 [alacritty](alacritty.md) --
-[brew](brew.md) --
 [bleachbit](bleachbit.md) -- deletes unneeded files to free disk space and maintain privacy
+[brew](brew.md) --
 [calcurse](calcurse.md) -- a text-based personal organizer
 [calibre](calibre.md) -- ebook library
 [cheat.sh](cheatsh.md) -- community driven cheat sheets
@@ -42,7 +44,6 @@
 [keybindings](keybindings.md) --
 [khal](khal.md) -- CLI calendar application build around CalDAV
 [khard](khard.md) -- Console CardDAV client
-[kivy-ios](kivy-ios-cheatsheet.md) --
 [latex](latex.md) -- TeX typesetting system
 [lf](lf) -- A terminal file manager inspired by ranger
 [lynx](lynx.md) -- a text browser for the world wide web
@@ -72,6 +73,7 @@
 [rsync](rsync.md) -- a fast and versatile file copying tool for remote and local files
 [sc-im](sc-im.md) -- vim-like spreadsheet calculator
 [sdcv](sdcv.md) -- command line dictionary
+[simple mtpfs](simple-mtpfs.md) --
 [slack](slack.md) --
 [ssh](ssh.md) -- for encrypted communication sessions
 [taskwarrior](taskwarrior.md) --
@@ -79,6 +81,7 @@
 [tldr](tldr.md) -- community-driven man pages
 [urlscan](urlscan.md) -- [mutt](mutt) and terminal url selector
 [urlview](urlview.md) -- a curses URL parser for text files
+[vdirsyncer](vdirsyncer.md) --
 [veracrypt](veracrypt.md) --
 [vim](vim.md) -- terminal text editor
 [vimplug](vimplug.md) -- a minimalist Vim plugin manager
@@ -94,7 +97,6 @@
 ## Snippets And Tips
 
 ## Sequrity
-[security tips](sectips.md) -- initial database
 [security-basis](security-basis.md) --
 [vpn](vpn) -- vpn
 
@@ -111,12 +113,15 @@
 ## Games
 [01 games](games) -- sources for foss games
 [cataclysm dda](cataclysm-dda) -- Cataclysm: Dark Days Ahead
+[ksp](ksp.md) --
 
 ## WWW
 [gmini](gmini.md) -- www gmini project
 
 ## MacOS
 [macos](macos.md) -- initial database
+[ios dev](ios-dev.md) --
+[kivy-ios](kivy-ios-cheatsheet.md) --
 
 ## photography
 [photo](photo.md) -- photography project

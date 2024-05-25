@@ -132,6 +132,12 @@ If you need to know which type of FAT file system a partition uses, use the file
 sudo file -s /dev/partition
 ```
 
+### mount cell phone
+[simple mtpfs](simple-mtpfs.md) -- how to mount android
+
+
+
+
 ---
 
 [[/index|Get Back To Index]]
