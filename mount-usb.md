@@ -3,6 +3,9 @@
 https://wiki.archlinux.org/title/File_systems  # file systems
 https://wiki.archlinux.org/title/Badblocks#  # badblocks is a program to test storage devices for bad blocks
 https://wiki.archlinux.org/title/USB_storage_devices  # This document describes how to use the popular USB memory sticks with Linux.
+https://losst.pro/kak-posmotret-usb-ustrojstva-linux
+https://archlinux.org/packages/core/x86_64/usbutils/
+https://man.archlinux.org/man/lsusb.8.en
 
 ### Create filesystems
 
@@ -135,7 +138,14 @@ sudo file -s /dev/partition
 ### mount cell phone
 [simple mtpfs](simple-mtpfs.md) -- how to mount android
 
+### disks check list
+[disks](disks.md) -- check your disks :)
 
+### TRIM
+TODO : configure and start TRIM service
+https://wiki.archlinux.org/title/TRIM
+https://wiki.archlinux.org/title/Journalctl
+https://wiki.archlinux.org/title/Edit
 
 
 ---

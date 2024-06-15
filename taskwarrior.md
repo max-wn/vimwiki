@@ -20,12 +20,14 @@ Your tasks are now stored in `taskchampion.sqlite3` in your `task` directory. Ba
 
 example
 ```bash
+# task commands
 task add Prepare the first draft of the proposal due:friday  # Create task
 task add Read Taskwarrior documents later  # Create task
-task add priority:H Pay bills  # Create task
-task ID modify project:Home  # Assign a project to your tasks if possible
-task ID modify +problem +house  # Add useful tags to a task
-# reports
+task add priority:H Pay bills              # Create task
+task ID modify project:Home                # Assign a project to your tasks if possible
+task ID modify +problem +house             # Add useful tags to a task
+task ID edit                               # edit task via your editor
+# task reports
 task list
 task summary
 task ghistory

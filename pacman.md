@@ -2,14 +2,15 @@
 
 ### Common commands
 
-| Command                 | Description                       |
-| ----------------------- | --------------------------------- |
-| `pacman -Syu <pkg>`     | Install (and update package list) |
-| `pacman -S <pkg>`       | Install only                      |
-| `pacman -Rs <pkg>`      | Uninstall                         |
-| `pacman -Ss <keywords>` | Search in repo                    |
-| `pacman -Qs <keywords>` | Search on PC                      |
-| `pacman -Syu`           | Upgrade everything                |
+| Command                 | Description                                     |
+| ----------------------- | ---------------------------------               |
+| `pacman -Syu <pkg>`     | Install (and update package list)               |
+| `pacman -S <pkg>`       | Install only                                    |
+| `pacman -Rs <pkg>`      | Uninstall with dependencies                     |
+| `pacman -Rsc <pkg>      | Uninstal, `-c` uninstall RECURSIVE dependencies |
+| `pacman -Ss <keywords>` | Search in repo                                  |
+| `pacman -Qs <keywords>` | Search on PC                                    |
+| `pacman -Syu`           | Upgrade everything                              |
 
 ### Query
 
@@ -50,6 +51,12 @@ vim /etc/pacman.conf
 This will refresh your databases even if they are already up to date. I have found this to rarely be necessary, even when updating my mirrorlist or adding custom repos. Could be used when your database was corrupted, and that happens exactly very rarely in Arch.
 ```bash
 sudo pacman -Syyu
+```
+
+clean pacman cache via `paccache` utilt from `pacman-contrib` package
+```bash
+paccache -rk1   # leave one cached version of package
+paccache -ruk0  # clean all cached versions
 ```
 
 ### References

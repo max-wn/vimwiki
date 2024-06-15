@@ -1,18 +1,20 @@
 # MY KNOWLEDGE BASE
 
 ## 01
-[arch installation guie](archlinux.md) --
-[arch warnings](archlinux-warnings.md) --
 [scratchpad](scratchpad.md) -- various temporary stuff
 [tasks](tasks.md) -- things to be done _yesterday_!!!
+
+## Archlinux
+[arch installation guie](archlinux.md) --
+[arch warnings](archlinux-warnings.md) --
+[fonts-emojy-utf8](emoji-and-utf8.md) --
+[usb and disks](mount-usb.md) -- mount USB
 
 ## Shell
 [01 shell](shell) -- sources
 [02 shell tips](shell-tips.md)
 [chmod](chmod.md) -- manage permissions
-[emojy-and-utf8](emoji-and-utf8.md) --
 [find](find.md) --
-[mount usb](mount-usb.md) -- mount USB
 [shred](shred.md) -- safely delete files
 
 ## FOSS
@@ -25,6 +27,7 @@
 [calcurse](calcurse.md) -- a text-based personal organizer
 [calibre](calibre.md) -- ebook library
 [cheat.sh](cheatsh.md) -- community driven cheat sheets
+[chirp next](chirp-next) -- GUI tool for programming ham radios, built from daily build
 [clamav](clamav.md) -- anti-virus toolkit for Unix
 [coreutils](coreutils.md) -- basic, fundamental tools of a GNU/Linux
 [crontab](crontab.md) --
@@ -85,9 +88,12 @@
 [veracrypt](veracrypt.md) --
 [vim](vim.md) -- terminal text editor
 [vimplug](vimplug.md) -- a minimalist Vim plugin manager
+[vimtex](vimtex) plugin for LaTeX
 [vimwiki](vimwiki.md) -- personal wiki for Vim
-[xdg ninja](xdg-ninja) -- a shell script which checks your $HOME for unwanted files and directories
+[xdg-ninja](xdg-ninja) -- a shell script which checks your $HOME for unwanted files and directories
+[yt-dlp](yt-dlp) -- download videos and audio from thousand websites
 [zathura](zathura.md) -- Minimalistic document viewer
+[matrix](matrix) -- ecosystem for open federated instant messaging and VoIP
 
 ---
 

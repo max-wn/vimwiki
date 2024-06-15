@@ -11,6 +11,7 @@ the creator of the Linux kernel
 [git-log-format](git-log-format.md)
 [git-revisions](git-revisions.md)
 [git-tricks](git-tricks.md)
+[conventional commits](conventional-commits)
 
 ---
 

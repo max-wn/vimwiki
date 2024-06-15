@@ -18,3 +18,8 @@ curl https://www.cl.cam.ac.uk/~mgk25/ucs/examples/UTF-8-demo.txt  # UTF-8 test f
 ### links
 https://github.com/ryanoasis/nerd-fonts
 https://www.paratype.com/collections/pt/44157
+
+
+---
+
+[[/index|Get Back To Index]]
