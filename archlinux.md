@@ -179,6 +179,8 @@ sector put the size as mentioned below:
 
 hit `w` for write these partitions
 
+NOTE: swap partition should be 1/2 of your RAM but not more than 8G, maximum 16G. Big swap is a waste of disk space...
+
 ### Set file system as follows:
 
 `-c` --> Check the device for bad blocks before creating the file system. If this option is specified twice, then a slower read-write test is used instead of a fast read-only test.

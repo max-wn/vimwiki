@@ -47,9 +47,21 @@ https://latex-tutorial.com/boost-latex-productivity-todo-notes/
 
 **Overleaf knowledge base.**
 https://www.overleaf.com/learn
+https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_2)%3A_Page_Layout
 
 LaTeX2e: An unofficial reference manual
 https://latexref.xyz/#toc-About-this-document-1
+
+**CTAN - Comprehensive TEX Archive Network**
+https://ctan.org/pkg/latex2e-help-texinfo
+
+**LaTeX project**
+https://www.latex-project.org/help/documentation/
+https://www.latex-project.org/help/links/
+
+**LaTeX wiki**
+https://en.wikibooks.org/wiki/LaTeX
+https://en.wikibooks.org/wiki/LaTeX/Links
 
 ### vimtex - latex syntax highlighting plugin
 https://github.com/lervag/vimtex
