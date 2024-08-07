@@ -1,21 +1,11 @@
 ## FREE OPEN SOURCE SOFTWARE I USE
 
----
-
-## program name
-description
-### links
-### quick start / tips / tricks
-
----
-
 ### Download And Source
-[BREW](https://formulae.brew.sh/)
 [PACMAN](https://archlinux.org/packages/)
 [ARCH WIKI - APPLICATIONS](https://wiki.archlinux.org/title/list_of_applications)
 
 ### Operating System/Distribution
-* ARCHLINUX
+ARCHLINUX
 
 ### Terminal
 * ALACRITTY
@@ -27,12 +17,10 @@ description
 * QTILE
 
 ### Web Browsers
-* [BRAVE](https://brave.com/) - alternative brawser for the World Wide Web
-* [FIREFOX](https://wiki.archlinux.org/title/Firefox) - main browser
-* [BRAVE](https://brave.com/) - alternative brawser
-* [LYNX](https://archlinux.org/packages/extra/x86_64/lynx/) - A text browser for the World Wide Web
-* [URLSCAN](https://github.com/firecat53/urlscan) - Mutt and terminal url selector
-
+[FIREFOX](https://wiki.archlinux.org/title/Firefox) - main browser
+[BRAVE](https://brave.com/) - alternative brawser
+[LYNX](https://archlinux.org/packages/extra/x86_64/lynx/) - A text browser for the World Wide Web
+[URLSCAN](https://github.com/firecat53/urlscan) - Mutt and terminal url selector
 
 ### Image Modification
 * [KRITA](https://krita.org) — это виртуальный холст, и без планшета там будет
@@ -49,7 +37,7 @@ description
   editor.
 
 ### 2fa
-* [OTP AUTH](https://cooperrs.de/otpauth.html) - iOS app for 2fa by Roland Moers
+[OTP AUTH](https://cooperrs.de/otpauth.html) - iOS app for 2fa by Roland Moers
 
 ### File manager
 * MC (MIDNIGHT COMMANDER)

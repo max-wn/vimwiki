@@ -1,4 +1,4 @@
-## git cheatsheet - git revisions
+## git revisions
 
 A list of revision specifications you can use with `git log` and many other
 Git commands. Summarized from `gitrevisions(7)` man page.

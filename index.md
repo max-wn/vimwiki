@@ -20,6 +20,8 @@
 ## FOSS
 [01 foss](foss.md) -- Software I Use
 [02 security tips](sectips.md) -- initial database
+[nmap](nmap) -- utility for network discovery and security auditing
+[pyradio](pyradio) -- Internet radio player for the command line
 [abook](abook.md) -- text-based addressbook designed for use with mutt
 [alacritty](alacritty.md) --
 [bleachbit](bleachbit.md) -- deletes unneeded files to free disk space and maintain privacy
@@ -51,6 +53,7 @@
 [lf](lf) -- A terminal file manager inspired by ranger
 [lynx](lynx.md) -- a text browser for the world wide web
 [markdown](markdown.md) -- is a lightweight markup language for creating formatted text
+[matrix](matrix) -- ecosystem for open federated instant messaging and VoIP
 [mc](mc.md) -- file manager
 [moc](moc.md) --
 [mpv](mpv.md) -- video player
@@ -91,9 +94,9 @@
 [vimtex](vimtex) plugin for LaTeX
 [vimwiki](vimwiki.md) -- personal wiki for Vim
 [xdg-ninja](xdg-ninja) -- a shell script which checks your $HOME for unwanted files and directories
+[xournal](xournal) -- Handwriting notetaking software with PDF annotation support
 [yt-dlp](yt-dlp) -- download videos and audio from thousand websites
 [zathura](zathura.md) -- Minimalistic document viewer
-[matrix](matrix) -- ecosystem for open federated instant messaging and VoIP
 
 ---
 

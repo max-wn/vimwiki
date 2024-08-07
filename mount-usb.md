@@ -1,5 +1,6 @@
 ## Operations with USB
 ### Links
+#### www
 https://wiki.archlinux.org/title/File_systems  # file systems
 https://wiki.archlinux.org/title/Badblocks#  # badblocks is a program to test storage devices for bad blocks
 https://wiki.archlinux.org/title/USB_storage_devices  # This document describes how to use the popular USB memory sticks with Linux.
@@ -7,8 +8,13 @@ https://losst.pro/kak-posmotret-usb-ustrojstva-linux
 https://archlinux.org/packages/core/x86_64/usbutils/
 https://man.archlinux.org/man/lsusb.8.en
 
-### Create filesystems
+#### mount cell phone
+[simple mtpfs](simple-mtpfs.md) -- how to mount android
 
+#### disks check list
+[disks](disks.md) -- check your disks :)
+
+### Create filesystems
 find badblocks (execute as sudo)
 `badblocks -wsv /dev/sda2`
 Options:
@@ -50,6 +56,10 @@ Find all disks
 lsblk     # show short list
 # or
 lsblk -f  # show long list
+# or
+lsusb     # show usb devises
+# or
+ls -lah /dev/disk/by-id/usb*  # show usb by id
 ```
 
 OR find all mounted disks
@@ -135,18 +145,37 @@ If you need to know which type of FAT file system a partition uses, use the file
 sudo file -s /dev/partition
 ```
 
-### mount cell phone
-[simple mtpfs](simple-mtpfs.md) -- how to mount android
-
-### disks check list
-[disks](disks.md) -- check your disks :)
-
 ### TRIM
-TODO : configure and start TRIM service
+according to archwiki:
 https://wiki.archlinux.org/title/TRIM
+
+Periodic TRIM
+The `util-linux` package provides `fstrim.service` and `fstrim.timer` `systemd` unit files. `Enabling` the timer will activate the service weekly. The service executes `fstrim(8)` on all mounted filesystems on devices that support the discard operation.
+
+The timer relies on the timestamp of `/var/lib/systemd/timers/stamp-fstrim.timer` (which it will create upon first invocation) to know whether a week has elapsed since it last ran. Therefore there is no need to worry about too frequent invocations, in an anacron-like fashion.
+
+To query the units activity and status, see `journalctl`.
 https://wiki.archlinux.org/title/Journalctl
+
+To change the periodicity of the timer or the command run, `edit` the provided unit files.
 https://wiki.archlinux.org/title/Edit
 
+```bash
+lsblk --discard  # verify TRIM support
+sudo systemctl enable fstrim.timer   # enable periodic TRIM
+# or
+sudo systemctl disable fstrim.timer  # disable periodic TRIM
+# or manually fstrim (discard unused blocks on a mounted filesystem) once
+sudo fstrim -v /path/to/mountpoint
+# or
+sudo fstrim -av
+	-a  # trim all mounted filesystems on devices that support the discard operation.
+	-v  # verbose
+	-n  # dy-run
+sudo journalctl --grep=PATTERN  # print log entries from the systemd journal where flags could be:
+	-b  # show all messages from this boot
+	-f  # show only the most recent journal entries, and continuously print new entries as they are appended to the journal
+```
 
 ---
 

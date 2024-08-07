@@ -1,4 +1,4 @@
-## git cheatsheet - git log
+## git log
 
 ### Revision ranges
 

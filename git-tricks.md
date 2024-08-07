@@ -1,41 +1,57 @@
-## git cheatsheet - git tricks
+## git tricks
 
 ### Refs
 
-    HEAD^       # 1 commit before head
-    HEAD^^      # 2 commits before head
-    HEAD~5      # 5 commits before head
+    `HEAD^`       # 1 commit before head
+    `HEAD^^`      # 2 commits before head
+    `HEAD~5`      # 5 commits before head
 
 ### Branches
 
-    # create a new branch
-      git checkout -b $branchname
-      git push origin $branchname --set-upstream
+#### create a new branch
+```bash
+git checkout -b $branchname
+git push origin $branchname --set-upstream
+```
 
-    # get a remote branch
-      git fetch origin
-      git checkout --track origin/$branchname
+#### get a remote branch
+```bash
+git fetch origin
+git checkout --track origin/$branchname
+```
 
-    # delete local remote-tracking branches (lol)
-      git remote prune origin
+#### delete local remote-tracking branches (lol)
+```bash
+git remote prune origin
+```
 
-    # list merged branches
-      git branch -a --merged
+#### list merged branches
+```bash
+git branch -a --merged
+```
 
-    # delete remote branch
-      git push origin :$branchname
+#### delete remote branch
+```bash
+git push origin :$branchname
+```
 
-    # go back to previous branch
-      git checkout -
+#### go back to previous branch
+```bash
+git checkout -
+```
 
 ### Collaboration
 
-    # Rebase your changes on top of the remote master
-      git pull --rebase upstream master
+#### Rebase your changes on top of the remote master
+```bash
+git pull --rebase upstream master
+```
 
-    # Squash multiple commits into one for a cleaner git log
-    # (on the following screen change the word pick to either 'f' or 's')
-      git rebase -i $commit_ref
+#### Squash multiple commits into one for a cleaner git log
+#### (on the following screen change the word pick to either 'f' or 's')
+```bash
+git rebase -i $commit_ref
+```
 
 Submodules
 ----------
@@ -124,19 +140,19 @@ Submodules
     git bisect reset  # abort
 
 ### Searching
-
+```bash
     git log --grep="fixes things"  # search in commit messages
     git log -S"window.alert"       # search in code
     git log -G"some-code"          # search in code (regex)
+```
 
 ### GPG Signing
-
-    git config set user.signingkey <GPG KEY ID>       # Sets GPG key to use for signing
-
-    git commit -m "Implement feature Y" --gpg-sign    # Or -S, GPG signs commit
-
-    git config set commit.gpgsign true                # Sign commits by default
-    git commit -m "Implement feature Y" --no-gpg-sign # Do not sign
+```bash
+git config set user.signingkey <GPG KEY ID>       # Sets GPG key to use for signing
+git commit -m "Implement feature Y" --gpg-sign    # Or -S, GPG signs commit
+git config set commit.gpgsign true                # Sign commits by default
+git commit -m "Implement feature Y" --no-gpg-sign # Do not sign
+```
 
 
 To configure your Git client to sign commits by default for a local

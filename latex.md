@@ -21,27 +21,32 @@ https://tug.org/mactex://tug.org/mactex/
 A guide to supercharged mathematical typesetting
 https://ejmastnak.com/tutorials/vim-latex/intro/
 
+**CASTEL.DEV Very interesting approach and manual**
+https://castel.dev/
+https://github.com/gillescastel
 How I'm able to take notes in mathematics lectures using LaTeX and Vim
 https://castel.dev/post/lecture-notes-1/
+How I draw figures for my mathematical lecture notes using Inkscape
+https://castel.dev/post/lecture-notes-2/
+How I manage my LaTeX lecture notes
+https://castel.dev/post/lecture-notes-3/
+My Mathematics PhD research workflow
+https://castel.dev/post/research-workflow/
 
-Luke Smith tutorials
+**Luke Smith tutorials**
 https://lukesmith.xyz/articles/wanna-learn-latex/
 
-LaTeX СПРАВОЧНИК - Примеры символов, кода, обозначений и команд [латекс, латех]
+**LaTeX СПРАВОЧНИК - Примеры символов, кода, обозначений и команд**
 https://fkn.ktu10.com/?q=node/2906
 
 **A simple guide to LaTeX – Step by Step**
 https://latex-tutorial.com/tutorials/
-
 Advanced LaTeX Cross-references
 https://latex-tutorial.com/advanced-latex-cross-references/
-
 How to make clickable links in LaTeX
 https://latex-tutorial.com/tutorials/hyperlinks/
-
 Tables in LaTeX
 https://latex-tutorial.com/tables-in-latex/
-
 How to Boost your LaTeX Productivity with Todo Notes
 https://latex-tutorial.com/boost-latex-productivity-todo-notes/
 
