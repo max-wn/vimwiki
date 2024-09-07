@@ -175,6 +175,8 @@ sudo fstrim -av
 sudo journalctl --grep=PATTERN  # print log entries from the systemd journal where flags could be:
 	-b  # show all messages from this boot
 	-f  # show only the most recent journal entries, and continuously print new entries as they are appended to the journal
+# example:
+sudo journalctl --grep=trim  # primt all trim logs
 ```
 
 ---

@@ -7,10 +7,14 @@
 [ssh-server](ssh-server.md)  --> ssh server
 
 #### www links
-https://losst.pro/kak-uznat-ip-adres-linux  # how find you ip
-https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04-ru
-https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys#ssh-overview
-https://wiki.archlinux.org/title/OpenSSH
+1. https://losst.pro/kak-uznat-ip-adres-linux  # how find you ip
+2. https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04-ru
+3. https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys#ssh-overview
+4. https://wiki.archlinux.org/title/OpenSSH  # Open SSH
+5. https://wiki.archlinux.org/title/SSH_keys#Choosing_the_key_location_and_passphrase  # SSH keys
+6. https://man.archlinux.org/man/ssh_config.5  # SSH config
+7. https://wiki.archlinux.org/title/SSH_keys#Generating_an_SSH_key_pair  # SSH keys
+8. Project with 3 parts tutorial of [OpenSSH Key Management][001]
 
 ### commands
 ```bash
@@ -49,6 +53,7 @@ chmod 600 ~/.ssh/id_rsa
 chmod 644 ~/.ssh/authorized_keys
 ```
 
+[001]: https://www.funtoo.org/Funtoo:Keychain "Funtoo Keychain Project"
 
 ---
 

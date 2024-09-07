@@ -33,6 +33,9 @@ https://castel.dev/post/lecture-notes-3/
 My Mathematics PhD research workflow
 https://castel.dev/post/research-workflow/
 
+**7 parts guide by ejmastnak "A guide to supercharged mathematical typesetting"**
+https://ejmastnak.com/tutorials/vim-latex/intro/
+
 **Luke Smith tutorials**
 https://lukesmith.xyz/articles/wanna-learn-latex/
 

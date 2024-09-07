@@ -756,6 +756,21 @@ reboot
 ```bash
 reboot
 ```
+### System Time
+
+https://wiki.archlinux.org/title/System_time#Time_zone
+
+Troubleshooting
+
+Clock shows a value that is neither UTC nor local time
+This might be caused by a number of reasons. For example, if your hardware clock is running on local time, but timedatectl is set to assume it is in UTC, the result would be that your timezone's offset to UTC effectively gets applied twice, resulting in wrong values for your local time and UTC.
+
+To force your clock to the correct time, and to also write the correct UTC to your hardware clock, follow these steps:
+
+1. Setup [ntpd](https://wiki.archlinux.org/title/Ntpd) (enabling it as a service is not necessary).
+2. Set your [time zone](https://wiki.archlinux.org/title/System_time#Time_zone) correctly.
+3. Run `ntpd -qg` to manually synchronize your clock with the network, ignoring large deviations between local UTC and network UTC.
+4. Run `hwclock --systohc` to write the current software UTC time to the hardware clock.
 
 ---
 

@@ -20,10 +20,9 @@
 ## FOSS
 [01 foss](foss.md) -- Software I Use
 [02 security tips](sectips.md) -- initial database
-[nmap](nmap) -- utility for network discovery and security auditing
-[pyradio](pyradio) -- Internet radio player for the command line
 [abook](abook.md) -- text-based addressbook designed for use with mutt
 [alacritty](alacritty.md) --
+[anki](anki) -- helps you remember words/phrases in a foreign language efficiently
 [bleachbit](bleachbit.md) -- deletes unneeded files to free disk space and maintain privacy
 [brew](brew.md) --
 [calcurse](calcurse.md) -- a text-based personal organizer
@@ -56,13 +55,16 @@
 [matrix](matrix) -- ecosystem for open federated instant messaging and VoIP
 [mc](mc.md) -- file manager
 [moc](moc.md) --
+[mpd](mpd) -- music player daemon
 [mpv](mpv.md) -- video player
 [msmtp](msmtp.md) -- a mini smtp client
 [mutt-wizard](mutt-wizard.md) -- autoconfigured email client with neomutt
 [mutt](mutt.md) -- small but very powerful text-based mail client
+[ncmpcpp](ncmpcpp) -- ncurses client for [MPD](mpd.md)
 [neomutt](neomutt.md) -- a version of [mutt](mutt.md) with added features
 [neovim](neovim.md) -- fork of [vim](vim-tips.md) aiming to improve user experience, plugins, and GUIs
 [newsboat](newsboat.md) -- rss reader
+[nmap](nmap) -- utility for network discovery and security auditing
 [nmcli](nmcli.md) --
 [notmuch](notmuch.md) -- mail indexer
 [nsxiv](nsxiv.md) -- neo (or new or not) simple (or small or suckless) X image viewer
@@ -73,6 +75,7 @@
 [passphraseme](passphraseme.md) -- passphrase creator
 [pip](pip.md) --
 [pycharm](pycharm.md) --
+[pyradio](pyradio) -- Internet radio player for the command line
 [qtile](qtile.md) --
 [reflector](reflector.md) -- manage arch linux mirrorlist
 [rename](rename) -- renames multiple files using Perl regular expressions

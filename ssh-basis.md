@@ -2,8 +2,7 @@
 
 ### Basis
 
-Generate ssh keys used for authentication, password-less logins, and other things.
-
+#### Generate ssh keys used for authentication, password-less logins, and other things.
 ```bash
 ssh-keygen                            # Generate a key interactively
 ssh-keygen -f ~/.ssh/filename         # Specify file in which to save the key
@@ -15,8 +14,7 @@ ssh-keygen -t rsa -b 4096 -C "email"  # Generate an RSA 4096 bit key with email 
 ssh-keygen -lf .ssh/id_ed25519.pub  # show key fingerprint
 ```
 
-Remove and retrieve keys
-
+#### Remove and retrieve keys
 ```bash
 ssh-keygen -l -F remote_host             # Retrieve the key fingerprint
                                          # from a host (useful for confirming
@@ -26,11 +24,12 @@ ssh-keygen -R remote_host                # Remove the keys of a host from the kn
 ssh-keygen -l -E md5 -f ~/.ssh/filename  # Retrieve the fingerprint of a key in MD5 Hex
 ```
 
-Change the password of a key:
-
+#### Change the password of a key:
 ```bash
 ssh-keygen -p -f ~/.ssh/filename
 ```
+
+#### Transfer files
 To transfer a file to a remote computer in the terminal run:
 
 ```bash
@@ -44,13 +43,12 @@ type first the remote address and then local.
 scp remoteuser@remote-ip-address:/path/to/remote/file  /path/to/local/file
 ```
 
+#### Installation
 Debian/Ubuntu you install on local machine `sudo apt install openssh-client`
 and on remote `sudo apt install openssh-server`
-
 on Archlinux you install on local and remote `sudo pacman -S openssh`
 
-### Add SSH to Github
-
+### Add SSH to Github [LINK][002]
 Generate key
 
 ```bash
@@ -74,16 +72,20 @@ Verify that the fingerprint in the message you see matches [GitHub's RSA public 
 ### ssh without password for one session only
 ```bash
 eval "$(ssh-agent)"        # Start the ssh-agent in the background
-ssh-add ~/.ssh/id_ed25519  # add key to ssh agent memory
-# agent stops when you close a terminal
-ssh-add -l  # list fingerprints of currently loaded keys:
+ssh-add ~/.ssh/id_ed25519  # add key to ssh agent memory, agent stops when you close a terminal
+# но учше добавлять ключ лишь на указанный промежуток времени:
+ssh-add -t 600s ~/.ssh/id_ed25519  # time format: '600' or '600s' or '1h30m'
+ssh-add -l  # list fingerprints of currently loaded keys
 ```
-
-
 
 ---
 
 [001]: https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints "github fingerprint"
+[002]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account "Adding a new SSH key to your GitHub account"
+[003]: https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh "Managing remote repositories"
+[004]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys "Reviewing your SSH keys"
+[005]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection "Testing your SSH connection"
+
 
 ---
 

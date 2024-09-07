@@ -3,6 +3,7 @@
 ### markdown cheat sheet
 
 [markdown-cheat-sheet](markdown-cheat-sheet.md)
+[markdown note block](markdown-note-block) -- How to Create a Note Block in Markdown
 
 ### markdown cheat sheet old
 ### References
@@ -179,4 +180,4 @@ Here's a sentence with a footnote. [^1]
 
 ---
 
-THE END
+[[/index|Get Back To Index]]

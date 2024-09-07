@@ -1,7 +1,6 @@
 ## ssh cheatsheet
 
 ### ssh how to disable password and allow only key authentication
-
 Key authentication is more secure over password authentication. Just because
 users might have weak passwords, an attacker can easily brute force them. On
 the other hand, it's impossible to brute force ssh key. That's why I encourage
@@ -9,7 +8,6 @@ you to use ssh key authentication and below I will show you how to configure
 it.
 
 ### Client part
-
 Generate key on client machine.
 
 ```bash
@@ -27,7 +25,6 @@ rm yourkey.pub
 ```
 
 ### Server part
-
 ssh to your server using password.
 
 ```bash
