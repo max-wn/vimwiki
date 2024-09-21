@@ -1,17 +1,13 @@
 ## SC-IM
 
-Spreadsheet Calculator Improvised, aka sc-im, is an ncurses based, vim-like
-spreadsheet calculator.
+[sc-im](https://github.com/andmarti1424/sc-im) is an ncurses based, vim-like spreadsheet calculator based on sc.
+Spreadsheet Calculator Improvised, aka sc-im, is an ncurses based, vim-like spreadsheet calculator.
 
 ### links
-direct link
-https://github.com/andmarti1424/sc-im
 
-help file
-https://raw.githubusercontent.com/andmarti1424/sc-im/freeze/src/doc
-
-tutor
-https://github.com/jonnieey/Sc-im-Tutorial/blob/master/Lesson1_Navigation.sc
+1. [direct link](https://github.com/andmarti1424/sc-im)
+2. [help file](https://raw.githubusercontent.com/andmarti1424/sc-im/freeze/src/doc)
+3. [tutor](https://github.com/jonnieey/Sc-im-Tutorial/blob/master/Lesson1_Navigation.sc)
 
 ### quick start
 
@@ -40,9 +36,31 @@ https://github.com/jonnieey/Sc-im-Tutorial/blob/master/Lesson1_Navigation.sc
 |        dr        | delete row                              |
 |        dc        | delete column                           |
 
+#### Instructions for sc-in tutorial
+
+Open files with sc-im eg.
+```sh
+sc-im Lesson1 - Navigation.sc
+```
 
 TODO
-* [ ] study sc-im tutorial [[file:~/Documents/linux_study/Sc-im-Tutorial]]  #e04aa4c2
+- [.] study sc-im tutorial: https://github.com/jonnieey/Sc-im-Tutorial
+  - [X] 0. Lesson0 - General commands and shortcuts in sc-im
+  - [X] 1. Lesson1 - Navigation
+  - [ ] 2. Lesson2 - Formatting cell contents
+  - [ ] 3. Lesson3 - Copy, Paste, Cut basics
+  - [ ] 4. Lesson4 - Copy, Paste, Cut
+  - [ ] 5. Lesson5 - Marks
+  - [ ] 6. Lesson6 - Sc-im Modes
+  - [ ] 7. Lesson7 - Insert and Edit Mode
+  - [ ] 8. Lesson8 - Visual Mode
+  - [ ] 9. Lesson9 - Command Mode
+  - [X] 10. Lesson10 - Configuration File
+  - [ ] 11. Lesson11 - Numeric Functions
+  - [ ] 12. Lesson12 - String Functions
+  - [ ] 13. Lesson13 - Date Functions
+  - [ ] 14. Lesson 14 - Conditional Function "if"
+- [ ] try this plugin: https://github.com/mipmip/vim-scimark
 
 ---
 

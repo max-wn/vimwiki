@@ -1,12 +1,17 @@
 ## ssh
 
 ### links
+
 #### vw links
-[openssh](openssh.md)  --> openssh
-[ssh-basis](ssh-basis.md)  --> ssh basis
-[ssh-server](ssh-server.md)  --> ssh server
+
+[openssh](openssh.md)  # openssh
+
+[ssh-basis](ssh-basis.md)  # ssh basis
+
+[ssh-server](ssh-server.md)  # ssh server
 
 #### www links
+
 1. https://losst.pro/kak-uznat-ip-adres-linux  # how find you ip
 2. https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04-ru
 3. https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys#ssh-overview
@@ -17,7 +22,8 @@
 8. Project with 3 parts tutorial of [OpenSSH Key Management][001]
 
 ### commands
-```bash
+
+```sh
 ip a                            # show yor ip
 ip -br a                        # show you ip short list
 ping -c 3 <host-ip>             # ping host
@@ -32,21 +38,19 @@ sudo systemctl enable sshd
 journalctl -fu sshd  # see logs of ssh where:
 	             # -f -> follow
 		     # -u -> unit (here unit is sshd)
+ssh-copy-id root@yourdomain.com  # copy your kay to root of remote machine
 ```
 
-```bash
-ssh-copy-id root@yourdomain.com
-```
-The above command will ask for your server's root password and log you in briefly. What this does is that it puts your public SSH key fingerprint on your server in a file `/root/.ssh/authorized_keys`. This file in turn allows approved SSH keys to log in without passwords.
+The `ssh-copy-id` command will ask for your server's root password and log you in briefly. What this does is that it puts your public SSH key fingerprint on your server in a file `/root/.ssh/authorized_keys`. This file in turn allows approved SSH keys to log in without passwords.
 Note that you can also replace `root` with a username of an account on the server if you had made a non-root user that you'd like to easily log into as well. For the username `user`, it will also store the key in `/home/user/.ssh/authorized_keys`.
 
 To test if this has worked, now try logging in normally to your server with ssh:
-```bash
+```sh
 ssh root@yourdomain.com
 ```
 
 If you find that this does not work try running the following, make sure you are in the directory where the keys where created.
-```bash
+```sh
 chmod 700 ~/.ssh/
 chmod 644 ~/.ssh/id_rsa.pub
 chmod 600 ~/.ssh/id_rsa

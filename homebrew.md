@@ -1,5 +1,10 @@
 ## homebrew cheatsheet
 
+### links
+https://brew.sh/
+https://docs.brew.sh/FAQ#how-do-i-update-my-local-packages
+https://formulae.brew.sh/
+
 ### Commands
 
 | Command                    | Description                 |
@@ -65,6 +70,19 @@ brew uninstall, rm, remove [options] formula|cask  # Uninstall a formula or cask
     --ignore-dependencies  # Don’t fail uninstall, even if formula is a dependency of any installed formulae.
     --formula  # Treat all named arguments as formulae.
     --cask  # Treat all named arguments as casks.
+```
+
+### tips
+
+Show formulae and casks that specify formula as a dependency; that is, show
+dependents of formula.
+```
+brew uses --installed --recursive formulaname
+```
+
+Show dependencies for formula.
+```
+brew deps --tree formulaname
 ```
 
 ### Also see

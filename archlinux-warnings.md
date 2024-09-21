@@ -14,7 +14,9 @@ https://aicsx.github.io/ax/blog/2022/01/07/Possibly-missing-firmware-for-module.
 
 https://wiki.archlinux.org/title/Mkinitcpio
 
-If you want to suppress the warnings, you can install the missing firmware. The meta-package `mkinitcpio-firmware` in `AUR` contains most optional firmwares. Alternatively, manually install the needed packages (see above link). Or just ignore these warnings.
+[001]: https://aur.archlinux.org/packages/mkinitcpio-firmware "mkinitcpio-firmware from AUR"
+
+If you want to suppress the warnings, you can install the missing firmware. The meta-package [mkinitcpio-firmware][001] in `AUR` contains most optional firmwares. Alternatively, manually install the needed packages (see above link). Or just ignore these warnings.
 
 2.
 ==> WARNING: consolefont: no font found in configuration

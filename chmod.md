@@ -2,23 +2,30 @@
 
 Standart permission
 
-```bash
+```sh
 chmod 755 <dir>
 ```
 
 Как можно сделать рекусивный chmod в каталоге с большой вложенностью чтобы для
 папок ставились права 700, а для для файлов 600?
 
-```bash
+```sh
 find /path -type d -exec chmod 700 {} \;
 find /path -type f -exec chmod 600 {} \;
+```
+
+example
+```sh
+find ./ -type f -exec chmod 664 {} \;
+# 664 means rw-rw-r--
+# './' means current dir
 ```
 
 The configuration directory `~/.ssh`, its contents should be accessible only by
 the user (check this on both the client and the server), and the user's home
 directory should only be writable by the user:
 
-```bash
+```sh
 chmod go-w ~
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/*
@@ -28,7 +35,7 @@ chown -R $USER ~/.ssh
 On the server, make the `authorized_keys` file read-only for the user and deny
 all other permissions:
 
-```bash
+```sh
 $ chmod 400 ~/.ssh/authorized_keys
 ```
 

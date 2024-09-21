@@ -6,6 +6,8 @@ To use it, a functional [mpd](mpd.md) must be present on the system since ncmpcp
 
 ### links
 https://wiki.archlinux.org/title/Ncmpcpp
+https://github.com/ncmpcpp/ncmpcpp
+https://rybczak.net/ncmpcpp/installation/
 
 ---
 

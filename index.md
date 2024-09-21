@@ -3,6 +3,7 @@
 ## 01
 [scratchpad](scratchpad.md) -- various temporary stuff
 [tasks](tasks.md) -- things to be done _yesterday_!!!
+[books](books.md) -- good books are **power**!!!
 
 ## Archlinux
 [arch installation guie](archlinux.md) --
@@ -24,7 +25,6 @@
 [alacritty](alacritty.md) --
 [anki](anki) -- helps you remember words/phrases in a foreign language efficiently
 [bleachbit](bleachbit.md) -- deletes unneeded files to free disk space and maintain privacy
-[brew](brew.md) --
 [calcurse](calcurse.md) -- a text-based personal organizer
 [calibre](calibre.md) -- ebook library
 [cheat.sh](cheatsh.md) -- community driven cheat sheets
@@ -102,9 +102,6 @@
 [zathura](zathura.md) -- Minimalistic document viewer
 
 ---
-
-## Books
-[books](books.md) -- good books are power!!!
 
 ## Snippets And Tips
 

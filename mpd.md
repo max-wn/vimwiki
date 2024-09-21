@@ -5,6 +5,7 @@
 ### links
 https://wiki.archlinux.org/title/Mpd -- archwiki
 https://mpd.readthedocs.io/en/stable/user.html -- documentation
+https://www.musicpd.org/
 
 ### start
 TODO

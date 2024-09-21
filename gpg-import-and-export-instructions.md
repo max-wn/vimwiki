@@ -16,7 +16,7 @@ Every so often I have to restore my gpg keys and I'm never sure how best to do i
 
 #### Restore the public and secret keyrings and trust database
 
-```bash
+```sh
 cp /path/to/backups/*.gpg ~/.gnupg/
 # or, if you exported the ownertrust
 gpg --import-ownertrust yourname-ownertrust-gpg.txt
@@ -28,7 +28,7 @@ This only really works if you don't mind losing any other keys (than your own).
 
 #### Export public and secret key and ownertrust
 
-```bash
+```sh
 gpg -a --export yourmail@example.com > yourname-public-gpg.key
 gpg -a --export-secret-keys yourmail@example.com > yourname-secret-gpg.key
 gpg --export-ownertrust > yourname-ownertrust-gpg.txt
@@ -36,7 +36,7 @@ gpg --export-ownertrust > yourname-ownertrust-gpg.txt
 
 #### Import secret key (which contains the public key) and ownertrust
 
-```bash
+```sh
 gpg --import yourname-secret-gpg.key
 gpg --import-ownertrust yourname-ownertrust-gpg.txt
 ```
@@ -49,7 +49,7 @@ This is mainly about trusting my key once I've imported it (by either restoring 
 
 This is so that I can encrypt data using my public key
 
-```bash
+```sh
 gpg --edit-key yourmail@example.com
 gpg> trust
 Your decision? 5 (Ultimate trust)
@@ -57,7 +57,7 @@ Your decision? 5 (Ultimate trust)
 
 *NOTE* If I don't trust the public key then I see the following message when trying to encrypt something with it:
 
-```bash
+```sh
 gpg: <key-id>: There is no assurance this key belongs to the named user
 ```
 

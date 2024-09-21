@@ -5,8 +5,8 @@
 %% ==========
 
 TODO
-- [ ] important
-    - [ ] mount time capsule
+- [o] important
+    - [X] mount time capsule
           https://www.youtube.com/watch?v=miHxtIqp94w
           https://github.com/gotbletu/shownotes/blob/master/timecapsule-afp-handler
     - [ ] изучить и настроить репозитории / комиты согласно ссылкам:
@@ -19,6 +19,14 @@ TODO
     * [ ] B.F. Skinner "Beyond freedom and dignity"
     * [X] Яштолд-Говорко В.А. "Фотосъемка И Обработка"
     * [ ] С.И. Архангельский "Элементарная фотография"
+
+* [ ] study these!
+	* [ ] Automatically compile Markdown notes into beautiful Latex PDF
+		* [ ] https://github.com/abeleinin/papyrus
+		* [ ] https://github.com/vim-pandoc/vim-pandoc/tree/master
+		* [ ] https://github.com/vim-pandoc/vim-pandoc-syntax
+	* [ ] pass
+
 
 
 DONE

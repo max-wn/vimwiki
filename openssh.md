@@ -7,6 +7,7 @@ Shell (SSH) protocol.
 ### links
 
 https://wiki.archlinux.org/title/OpenSSH
+
 https://wiki.archlinux.org/title/SSH_keys#Choosing_the_key_location_and_passphrase
 
 https://formulae.brew.sh/formula/openssh#default
