@@ -15,6 +15,7 @@
 [01 shell](shell) -- sources
 [02 shell tips](shell-tips.md)
 [chmod](chmod.md) -- manage permissions
+[commit-message-guidelines](commit-message-guidelines) --
 [find](find.md) --
 [shred](shred.md) -- safely delete files
 
@@ -36,6 +37,7 @@
 [debian](debian.md) --
 [exiftool-qpdf](exiftool-qpdf.md) --
 [feh](feh) -- fast and light imlib2-based image viewer (X11 image viewer)
+[ffmpeg](ffmpeg) -- complete, cross-platform solution to record, convert and stream audio and video
 [firefox](firefox.md) -- web browser
 [gh](gh.md) -- GitHub command-line tool
 [git](git.md) -- version control system
@@ -62,7 +64,7 @@
 [mutt](mutt.md) -- small but very powerful text-based mail client
 [ncmpcpp](ncmpcpp) -- ncurses client for [MPD](mpd.md)
 [neomutt](neomutt.md) -- a version of [mutt](mutt.md) with added features
-[neovim](neovim.md) -- fork of [vim](vim-tips.md) aiming to improve user experience, plugins, and GUIs
+[neovim](neovim.md) -- fork of [vim](vim.md) aiming to improve user experience, plugins, and GUIs
 [newsboat](newsboat.md) -- rss reader
 [nmap](nmap) -- utility for network discovery and security auditing
 [nmcli](nmcli.md) --
@@ -74,6 +76,7 @@
 [pass](pass.md) -- stores, retrieves, generates, and synchronizes passwords securely
 [passphraseme](passphraseme.md) -- passphrase creator
 [pip](pip.md) --
+[pocketbook](pocketbook) --
 [pycharm](pycharm.md) --
 [pyradio](pyradio) -- Internet radio player for the command line
 [qtile](qtile.md) --

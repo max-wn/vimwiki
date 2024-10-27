@@ -15,6 +15,8 @@ Delete a specific unicode character with a long hex code, e.g. `<200b>`:
 
 ### links
 
+https://simpleicons.org/?q=latex
+
 #### for Arch
 
 https://wiki.archlinux.org/title/LaTeX
@@ -42,6 +44,8 @@ https://wiki.archlinux.org/title/LaTeX
 
 **LaTeX СПРАВОЧНИК - Примеры символов, кода, обозначений и команд**
 1. https://fkn.ktu10.com/?q=node/2906
+2. [Title Page](https://fkn.ktu10.com/?q=node/7102)
+3. https://mipt-ltc.github.io/latex/
 
 **A simple guide to LaTeX – Step by Step**
 1. [Boroda Tutorial](https://latex-tutorial.com/tutorials/)
@@ -58,6 +62,8 @@ https://wiki.archlinux.org/title/LaTeX
 
 **CTAN - Comprehensive TEX Archive Network**
 1. https://ctan.org/pkg/latex2e-help-texinfo
+2. [biblatex-gost – BibLaTeX support for GOST standard bibliographies](https://www.ctan.org/pkg/biblatex-gost)
+3. https://github.com/odomanov/biblatex-gost/
 
 **LaTeX project**
 1. https://www.latex-project.org/help/documentation/
@@ -67,12 +73,32 @@ https://wiki.archlinux.org/title/LaTeX
 1. https://en.wikibooks.org/wiki/LaTeX
 2. https://en.wikibooks.org/wiki/LaTeX/Links
 3. https://www.reddit.com/r/LaTeX/
+4. https://tug.org/begin.html
+5. https://tug.org/interest.html#doc
+
+#### BMSTU
+
+1. https://github.com/Orianti/bmstu-latex-class
+2. https://www.ctan.org/pkg/bmstu
 
 ### vimtex - latex syntax highlighting plugin
 
 1. https://github.com/lervag/vimtex
 2. https://github.com/lervag/vimtex/blob/master/VISUALS.md
 3. https://ejmastnak.com/tutorials/vim-latex/vimtex/
+
+### beamer
+
+1. https://ru.wikipedia.org/wiki/Beamer_(LaTeX)
+2. https://deic.uab.cat/~iblanes/beamer_gallery/
+
+### tables
+
+1. [Tables Generator](https://www.tablesgenerator.com/latex_tables)
+
+### symbols
+
+1. [Symbol Recognition](https://detexify.kirelabs.org/classify.html)
 
 ### pdf viewer
 

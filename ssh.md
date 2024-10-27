@@ -24,21 +24,22 @@
 ### commands
 
 ```sh
+sudo nvim /etc/ssh/sshd_config  # config file
 ip a                            # show yor ip
 ip -br a                        # show you ip short list
 ping -c 3 <host-ip>             # ping host
 systemctl status sshd           # ssh dimom status
-sudo nvim /etc/ssh/sshd_config  # config file
+sudo systemctl enable sshd
 sudo systemctl start sshd       # start ssh dimon
+# or
 systemctl restart sshd          # restart ssh dimon
 ssh-copy-id -i ~/.ssh/id_ed25519.pub name@host-ip  # copy ssh key to host
+ssh-copy-id root@yourdomain.com # copy your kay to root of remote machine
 sudo systemctl stop sshd        # stop ssh dimon
 sudo systemctl disable sshd
-sudo systemctl enable sshd
 journalctl -fu sshd  # see logs of ssh where:
 	             # -f -> follow
 		     # -u -> unit (here unit is sshd)
-ssh-copy-id root@yourdomain.com  # copy your kay to root of remote machine
 ```
 
 The `ssh-copy-id` command will ask for your server's root password and log you in briefly. What this does is that it puts your public SSH key fingerprint on your server in a file `/root/.ssh/authorized_keys`. This file in turn allows approved SSH keys to log in without passwords.

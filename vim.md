@@ -1,8 +1,18 @@
 ## VIM
 
+### wiki links
+
+1. https://ru.wikibooks.org/wiki/Vim
+2. https://guides.hexlet.io/ru/vim/
+3. https://vim.fandom.com/wiki/Vim_Tips_Wiki
+4. [all commands](https://vimhelp.org/index.txt.html#)
+5. https://vim.rtorr.com/
+6. https://neovim.io/doc/user/
+
 ### clipdoard
 
 #### links
+
 https://vim.fandom.com/wiki/Accessing_the_system_clipboard
 https://stackoverflow.com/questions/3961859/how-to-copy-to-clipboard-in-vim
 https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
@@ -31,6 +41,8 @@ advanced features, such as a GUI)
 
 ### vim plugins
 
+#### vimplug
+
 [vimplug](vimplug.md) -- a minimalist Vim plugin manager
 
 #### vim-commentary
@@ -38,6 +50,13 @@ https://github.com/tpope/vim-commentary
 Comment stuff out. Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion (for example, `gcap` to comment out a paragraph), `gc` in visual mode to comment out the selection, and `gc` in operator pending mode to target a comment. You can also use it as a command, either with a range like `:7,17Commentary`, or as part of a `:global` invocation like with `:g/TODO/Commentary`. That's it.
 
 Oh, and it uncomments, too. The above maps actually toggle, and `gcgc` uncomments a set of adjacent commented lines.
+
+#### jellybeans.vim
+
+https://github.com/nanotech/jellybeans.vim
+
+A colorful, dark color scheme, inspired by ir_black and twilight.
+Designed primarily for a graphical Vim, but includes support for 256, 88, 16, and 8 color terminals. On a 16 or 8 color terminal, replace its colors with those in ansi-term-colors.txt for best results.
 
 ---
 

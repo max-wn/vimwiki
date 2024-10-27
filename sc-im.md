@@ -47,7 +47,7 @@ TODO
 - [.] study sc-im tutorial: https://github.com/jonnieey/Sc-im-Tutorial
   - [X] 0. Lesson0 - General commands and shortcuts in sc-im
   - [X] 1. Lesson1 - Navigation
-  - [ ] 2. Lesson2 - Formatting cell contents
+  - [X] 2. Lesson2 - Formatting cell contents
   - [ ] 3. Lesson3 - Copy, Paste, Cut basics
   - [ ] 4. Lesson4 - Copy, Paste, Cut
   - [ ] 5. Lesson5 - Marks

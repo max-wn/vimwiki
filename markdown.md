@@ -7,7 +7,7 @@
 
 ### Often commands are
 
-#### Links
+#### How to make Links
 
 1.
 [title-of-link](https://archlinux.org)
@@ -20,8 +20,7 @@
 3.
 <https://archlinux.org>
 
-
-#### Images
+#### How to make Images
 
 ![Image alt text](/path/to/img.jpg)
 ![Image alt text](/path/to/img.jpg "title")
