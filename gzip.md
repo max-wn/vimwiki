@@ -23,10 +23,9 @@ path for it:
 ```
 
 other utilities for MacOS
-https://formulae.brew.sh/formula/zip#default  # I use preinstalled utility
-
-https://formulae.brew.sh/cask/rar#default --> installed
-https://manned.org/rar --> manual for above rar utility
+1. https://formulae.brew.sh/formula/zip#default  # I use preinstalled utility
+2. https://formulae.brew.sh/cask/rar#default --> installed
+3. https://manned.org/rar --> manual for above rar utility
 
 examples:
 

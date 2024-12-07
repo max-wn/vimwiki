@@ -18,6 +18,7 @@
 [commit-message-guidelines](commit-message-guidelines) --
 [find](find.md) --
 [shred](shred.md) -- safely delete files
+[stow](stow) --
 
 ## FOSS
 [01 foss](foss.md) -- Software I Use
@@ -41,10 +42,12 @@
 [firefox](firefox.md) -- web browser
 [gh](gh.md) -- GitHub command-line tool
 [git](git.md) -- version control system
+[glow](glow.md) --
 [gnupg](gnupg.md) --
 [gtypist](gtypist.md) -- universal typing tutor
 [gzip](gzip.md) -- GNU compression utility
 [homebrew](homebrew.md) --
+[htop](htop) -- interactive process viewer
 [isync](isync.md) -- IMAP and MailDir mailbox synchronizer
 [jack](jack.md) --
 [keybindings](keybindings.md) --
@@ -80,17 +83,21 @@
 [pycharm](pycharm.md) --
 [pyradio](pyradio) -- Internet radio player for the command line
 [qtile](qtile.md) --
+[radeon](radeon.md) --
 [reflector](reflector.md) -- manage arch linux mirrorlist
 [rename](rename) -- renames multiple files using Perl regular expressions
 [rsync](rsync.md) -- a fast and versatile file copying tool for remote and local files
 [sc-im](sc-im.md) -- vim-like spreadsheet calculator
+[scrot](scrot) -- simple command-line screenshot utility for X
 [sdcv](sdcv.md) -- command line dictionary
 [simple mtpfs](simple-mtpfs.md) --
 [slack](slack.md) --
 [ssh](ssh.md) -- for encrypted communication sessions
+[syncthing](syncthing.md) --
 [taskwarrior](taskwarrior.md) --
 [taskwiki](taskwiki.md) -- project management in vim for VimWiki and Taskwarrior
 [tldr](tldr.md) -- community-driven man pages
+[ttf-paratype](ttf-paratype.md) -- ParaType font family with extended cyrillic and latin character sets
 [urlscan](urlscan.md) -- [mutt](mutt) and terminal url selector
 [urlview](urlview.md) -- a curses URL parser for text files
 [vdirsyncer](vdirsyncer.md) --
@@ -98,11 +105,12 @@
 [vim](vim.md) -- terminal text editor
 [vimplug](vimplug.md) -- a minimalist Vim plugin manager
 [vimtex](vimtex) plugin for LaTeX
-[vimwiki](vimwiki.md) -- personal wiki for Vim
+[vimwiki](vimwiki-basis.md) -- personal wiki for Vim
 [xdg-ninja](xdg-ninja) -- a shell script which checks your $HOME for unwanted files and directories
 [xournal](xournal) -- Handwriting notetaking software with PDF annotation support
 [yt-dlp](yt-dlp) -- download videos and audio from thousand websites
 [zathura](zathura.md) -- Minimalistic document viewer
+[zip and unzip](zip-unzip.md) -- Archiving and compression
 
 ---
 

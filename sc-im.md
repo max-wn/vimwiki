@@ -1,7 +1,6 @@
 ## SC-IM
 
-[sc-im](https://github.com/andmarti1424/sc-im) is an ncurses based, vim-like spreadsheet calculator based on sc.
-Spreadsheet Calculator Improvised, aka sc-im, is an ncurses based, vim-like spreadsheet calculator.
+[sc-im](https://github.com/andmarti1424/sc-im) is an ncurses based, vim-like spreadsheet calculator based on sc. Spreadsheet Calculator Improvised, aka sc-im, is an ncurses based, vim-like spreadsheet calculator.
 
 ### links
 
@@ -35,6 +34,9 @@ Spreadsheet Calculator Improvised, aka sc-im, is an ncurses based, vim-like spre
 |        ic        | insert column                           |
 |        dr        | delete row                              |
 |        dc        | delete column                           |
+|        gg        | go to the first cell in the sheet       |
+|        G         | go to the last valid cell in the sheet  |
+
 
 #### Instructions for sc-in tutorial
 
@@ -43,24 +45,35 @@ Open files with sc-im eg.
 sc-im Lesson1 - Navigation.sc
 ```
 
+### sc-im-md integrator
+
+**link and description**
+https://github.com/mipmip/vim-scimark  # Edit embedded markdown tables with SC-IM in a Vim terminal window.
+
+**Usage:**
+1. Point your cursor on a markdown table and press `<leader>sc`
+2. From here you are inside `sc-im`.
+3. The most minimal table scimark reckognizes is `||`.
+4. See more in `:help Scimark`
+
 TODO
-- [.] study sc-im tutorial: https://github.com/jonnieey/Sc-im-Tutorial
+- [O] study sc-im tutorial: https://github.com/jonnieey/Sc-im-Tutorial
   - [X] 0. Lesson0 - General commands and shortcuts in sc-im
   - [X] 1. Lesson1 - Navigation
   - [X] 2. Lesson2 - Formatting cell contents
-  - [ ] 3. Lesson3 - Copy, Paste, Cut basics
-  - [ ] 4. Lesson4 - Copy, Paste, Cut
-  - [ ] 5. Lesson5 - Marks
-  - [ ] 6. Lesson6 - Sc-im Modes
-  - [ ] 7. Lesson7 - Insert and Edit Mode
-  - [ ] 8. Lesson8 - Visual Mode
-  - [ ] 9. Lesson9 - Command Mode
+  - [X] 3. Lesson3 - Copy, Paste, Cut basics
+  - [X] 4. Lesson4 - Copy, Paste, Cut
+  - [X] 5. Lesson5 - Marks
+  - [X] 6. Lesson6 - Sc-im Modes
+  - [X] 7. Lesson7 - Insert and Edit Mode
+  - [X] 8. Lesson8 - Visual Mode
+  - [X] 9. Lesson9 - Command Mode
   - [X] 10. Lesson10 - Configuration File
   - [ ] 11. Lesson11 - Numeric Functions
   - [ ] 12. Lesson12 - String Functions
   - [ ] 13. Lesson13 - Date Functions
   - [ ] 14. Lesson 14 - Conditional Function "if"
-- [ ] try this plugin: https://github.com/mipmip/vim-scimark
+- [X] try this plugin: https://github.com/mipmip/vim-scimark
 
 ---
 

@@ -458,7 +458,7 @@ sudo pacman -Rs xf86-video-nouveau
 sudo pacman -Rs xf86-video-intel
 ```
 
-Ceck if you have mesa (if not, install it)
+Ceck if you have [mesa](mesa-utils.md) (if not, install it)
 
 ```bash
 sudo pacman -Qs mesa mesa-utils

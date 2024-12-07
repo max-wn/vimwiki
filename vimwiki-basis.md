@@ -1,18 +1,21 @@
 ## VimWiki
 
 ### links
+
 https://github.com/vimwiki/vimwiki/tree/dev
 https://vimwiki.github.io/
 https://vimwiki.github.io/vimwikiwiki/Tips%20and%20Snips.html
 https://samgriesemer.com/Vimwiki
 
 ### basis
+
 `vim -c VimwikiIndex`  open vimwiki from terminal
 leader is ","
 
 ### The basic vimwiki command set
 
 ### wiki management
+
 **action**
 `[number] <leader> ww` open wiki index file
 `[number] <leader> wt` open wiki index file in new tab
@@ -22,6 +25,7 @@ leader is ","
 **number** is relative wiki order as defined in `.vimrc`, default `1`.
 
 ### diary management
+
 **action**
 `[number] <leader> wi` open diary index file for wiki
 `<leader> w <leader> i` update current diary index
@@ -32,6 +36,7 @@ leader is ","
 **number** is relative wiki order as defined in `.vimrc`, default `1`.
 
 ### navigation
+
 **action**
 `<CR>`        follow/create wiki link
 `<C-S-CR>`    follow/create wiki link in new tab
@@ -40,6 +45,7 @@ leader is ","
 `<S-Tab>`     go to previous link on current page
 
 ### editing shortcuts
+
 **action**
 `<C-Space>` toggle list item on/off
 `#` add header level
@@ -47,12 +53,13 @@ leader is ","
 `+` create/decorate links
 `glm` increase indent of list item
 `gll` decrease indent of list item
-`gl**` or `gl8` switch or insert “**” symbol
-`gl#` or `gl3` switch or insert “#” symbol
-`gl-` switch or insert “-“ symbol
-`gl1` switch or insert “1.” symbol
+`gl**` or `gl8` switch or insert `**` symbol
+`gl#` or `gl3` switch or insert `#` symbol
+`gl-` switch or insert `-` symbol
+`gl1` switch or insert `1.` symbol
 
 ### table shortcuts
+
 **action**
 `<A-Left>` move column left
 `<A-right>` move column right
@@ -61,6 +68,7 @@ leader is ","
 `gqq` or `gww` reformat table
 
 ### text objects
+
 **object**
 `ah` section between 2 headings including empty trailing lines
 `ih` section between 2 headings excluding empty trailing lines
