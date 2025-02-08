@@ -1,11 +1,13 @@
 ## gtypist
 
+Universal typing tutor
+
 ### links
 
-https://aur.archlinux.org/packages/gtypist
-https://www.gnu.org/software/gtypist/doc/
-https://www.gnu.org/software/gtypist/
-https://formulae.brew.sh/formula/gnu-typist#default
+1. https://aur.archlinux.org/packages/gtypist
+2. https://www.gnu.org/software/gtypist/doc/
+3. https://www.gnu.org/software/gtypist/
+4. https://formulae.brew.sh/formula/gnu-typist#default
 
 ### usage
 
@@ -13,7 +15,6 @@ https://formulae.brew.sh/formula/gnu-typist#default
 gtypist         # run english default lesson
 gtypist ru.typ  # run russian lesson
 ```
-
 
 ---
 

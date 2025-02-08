@@ -4,7 +4,7 @@
 
 To use config and keymap files, copy them to (for Linux):
 
-```bash
+```sh
 ~/.moc/config
 ~/.moc/keymap
 ```
@@ -13,32 +13,32 @@ Documentation see at: [link](http://moc.daper.net "moc documentation")
 
 config and keymap example files are in:
 
-```bash
+```sh
 /usr/share/doc/moc/examples
 ```
 
 copy these files to:
 
-```bash
+```sh
 cp config.example ~/$USER/.moc/config
 cp keymap.example ~/$USER/.moc/keymap
 ```
 
 themes are in:
 
-```bash
+```sh
 /usr/share/moc/themes
 ```
 
 copy these files to:
 
-```bash
+```sh
 ~/$USER/.moc/themes/
 ```
 
 moc start command is:
 
-```bash
+```sh
 mocp
 ```
 

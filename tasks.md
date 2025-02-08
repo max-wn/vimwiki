@@ -5,12 +5,12 @@
 %% ==========
 
 TODO
-- [o] important
+- [o] important:
     - [X] mount time capsule
           https://www.youtube.com/watch?v=miHxtIqp94w
           https://github.com/gotbletu/shownotes/blob/master/timecapsule-afp-handler
-    - [ ] изучить и настроить репозитории / комиты согласно ссылкам:
-	    - [ ] https://habr.com/ru/articles/805889/
+    - [.] изучить и настроить репозитории / комиты согласно ссылкам:
+	    - [X] https://habr.com/ru/articles/805889/
 	    - [ ] https://www.conventionalcommits.org/en/v1.0.0/
 	    - [ ] https://semver.org/
 
@@ -20,12 +20,12 @@ TODO
     * [X] Яштолд-Говорко В.А. "Фотосъемка И Обработка"
     * [ ] С.И. Архангельский "Элементарная фотография"
 
-* [ ] study these!
+* [o] study these:
 	* [ ] Automatically compile Markdown notes into beautiful Latex PDF
 		* [ ] https://github.com/abeleinin/papyrus
 		* [ ] https://github.com/vim-pandoc/vim-pandoc/tree/master
 		* [ ] https://github.com/vim-pandoc/vim-pandoc-syntax
-	* [ ] pass
+	* [X] pass
 
 
 
