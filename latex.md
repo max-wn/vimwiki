@@ -52,6 +52,8 @@ https://wiki.archlinux.org/title/LaTeX
 2. [How to make clickable links in LaTeX](https://latex-tutorial.com/tutorials/hyperlinks/)
 3. [Tables in LaTeX](https://latex-tutorial.com/tables-in-latex/)
 4. [How to Boost your LaTeX Productivity with Todo Notes](https://latex-tutorial.com/boost-latex-productivity-todo-notes/)
+5. [How to Create an Index Page in LaTeX](https://latex-tutorial.com/creating-index-latex/)
+6. [Export Bibliographic Database (BibTeX) Entries from Online Databases](https://latex-tutorial.com/bibtex-entries/)
 
 **Overleaf knowledge base.**
 1. https://www.overleaf.com/learn

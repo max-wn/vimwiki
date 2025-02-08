@@ -293,7 +293,9 @@ Uppercase ones are recursive (eg, `zO` is open recursively).
 
 #### Windows
 
-| `z{height}<Cr>` | Resize pane to `{height}` lines tall |
+| Shortcut         | Description                              |
+| ---              | ---                                      |
+| `z{height}<Cr>`  | Resize pane to `{height}` lines tall     |                                     |                                          |
 
 #### Tags
 
@@ -352,11 +354,11 @@ Do these in visual or normal mode.
 
 #### Misc
 
-| Shortcut   | Description                                       |
-| ---        | ---                                               |
-| `.`        | Repeat last command                               |
-| `]p`       | Paste under the current indentation level         |
-| ---        | ---                                               |
+| Shortcut       | Description                                       |
+| ---            | ---                                               |
+| `.`            | Repeat last command                               |
+| `]p`           | Paste under the current indentation level         |
+| ---            | ---                                               |
 | `:set ff=unix` | Convert Windows line endings to Unix line endings |
 
 #### Command line
@@ -390,11 +392,11 @@ Do this in insert mode.
 
 Works like `:qa`, but throws an error. Great for aborting Git commands.
 
-
 #### Spell checking
 
 | Shortcut                     | Description                                             |
 | ---                          | ---                                                     |
+| `,o`                         | start checking                                          |
 | `:set spell spelllang=en_us` | Turn on US English spell checking                       |
 | `]s`                         | Move to next misspelled word after the cursor           |
 | `[s`                         | Move to previous misspelled word before the cursor      |

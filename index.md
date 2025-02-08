@@ -96,6 +96,7 @@
 [syncthing](syncthing.md) --
 [taskwarrior](taskwarrior.md) --
 [taskwiki](taskwiki.md) -- project management in vim for VimWiki and Taskwarrior
+[termdown](termdown.md) -- Countdown timer and stopwatch in your terminal
 [tldr](tldr.md) -- community-driven man pages
 [ttf-paratype](ttf-paratype.md) -- ParaType font family with extended cyrillic and latin character sets
 [urlscan](urlscan.md) -- [mutt](mutt) and terminal url selector

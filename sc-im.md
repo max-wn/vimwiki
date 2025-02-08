@@ -69,7 +69,7 @@ TODO
   - [X] 8. Lesson8 - Visual Mode
   - [X] 9. Lesson9 - Command Mode
   - [X] 10. Lesson10 - Configuration File
-  - [ ] 11. Lesson11 - Numeric Functions
+  - [X] 11. Lesson11 - Numeric Functions
   - [ ] 12. Lesson12 - String Functions
   - [ ] 13. Lesson13 - Date Functions
   - [ ] 14. Lesson 14 - Conditional Function "if"
