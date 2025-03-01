@@ -53,6 +53,8 @@ This will refresh your databases even if they are already up to date. I have fou
 sudo pacman -Syyu
 ```
 
+### Clean pacman cache
+
 clean pacman cache via `paccache` utilt from `pacman-contrib` package
 ```bash
 paccache -rk1   # leave one cached version of package
@@ -62,3 +64,7 @@ paccache -ruk0  # clean all cached versions
 ### References
 
 * [Pacman tips and tricks](https://wiki.archlinux.org/index.php/Pacman/Tips_and_tricks) _(wiki.archlinux.org)_
+
+---
+
+[[/index|Get Back To Index]]

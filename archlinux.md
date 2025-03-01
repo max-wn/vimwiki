@@ -1,9 +1,9 @@
 # Arch Linux installation guide
 
 ## links
-https://wiki.archlinux.org/title/Installation_guide#Post-installation
-https://wiki.archlinux.org/title/General_recommendations
 
+1. https://wiki.archlinux.org/title/Installation_guide#Post-installation
+2. https://wiki.archlinux.org/title/General_recommendations
 
 ## download arch iso
 
@@ -12,12 +12,13 @@ in [wiki](https://wiki.archlinux.org/index.php/Installation_guide "wiki
 guide")
 
 **for example on macOS:**
+
 * download iso from [wiki](https://www.archlinux.org/download/ "wiki
    downloads")
 * `cd` to Download directory
 * get the checksum:
 
-```bash
+```sh
 md5 /path/to/archlinux-version-x86_64.iso
 # or via gnupg
 gpg --keyserver-options auto-key-retrieve --verify /path/to/archlinux-version-x86_64.iso.sig
@@ -31,7 +32,7 @@ gpg --keyserver-options auto-key-retrieve --verify /path/to/archlinux-version-x8
 
 Find name of USB (for example it is `sdaX`)
 
-```bash
+```sh
 lsblk  # for GNU Linux
 # or
 diskutil list  # for macos
@@ -39,7 +40,7 @@ diskutil list  # for macos
 
 Unmount USB
 
-```bash
+```sh
 sudo umount /dev/sda
 # or
 diskutil unmountDisk /dev/sdaX
@@ -47,13 +48,13 @@ diskutil unmountDisk /dev/sdaX
 
 Format USB
 
-```bash
+```sh
 sudo mkfs -t ext4 -L FLASH /dev/sdaX
 ```
 
 Now copy the ISO image file to the device.
 
-```bash
+```sh
 # for macos
 sudo dd if=path/to/archlinux-version-x86_64.iso of=/dev/rdiskX bs=1m
 ```
@@ -62,7 +63,7 @@ sudo dd if=path/to/archlinux-version-x86_64.iso of=/dev/rdiskX bs=1m
 
 To verify the boot mode, list the efivars directory:
 
-```bash
+```sh
 ls /sys/firmware/efi/efivars
 ```
 
@@ -74,19 +75,19 @@ BIOS
 
 check ip and ping (if no ip and ping use wifi instructions):
 
-```bash
+```sh
 ip link  #Ensure your network interface is listed and enabled
 ```
 
 Set rfkill off
 
-```bash
+```sh
 rfkill unblock wifi
 ```
 
 Set device up
 
-```bash
+```sh
 ip link set wlan0 up
 ```
 
@@ -96,13 +97,13 @@ ip link set wlan0 up
 
 To get an interactive prompt do:
 
-```bash
+```sh
 iwctl
 ```
 
 To list all available commands:
 
-```bash
+```sh
 [iwd]# help
 ```
 
@@ -110,53 +111,53 @@ Connect to a network
 
 First, if you do not know your wireless device name, list all Wi-Fi devices:
 
-```bash
+```sh
 [iwd]# device list
 ```
 Find your device name (for example it is `wlan0`)
 
 Then, to scan for networks:
 
-```bash
+```sh
 [iwd]# station wlan0 scan
 ```
 Above command will not output anything
 
 You can then list all available networks:
 
-```bash
+```sh
 [iwd]# station wlan0 get-networks
 ```
 
 Finally, to connect to a network:
 
-```bash
+```sh
 [iwd]# station wlan0 connect SSID
 ```
 
 If a passphrase is required, you will be prompted to enter it. Alternatively,
 you can supply it as a command line argument:
 
-```bash
+```sh
 iwctl --passphrase your-passphrase station device connect SSID
 ```
 
 Check connection
 
-```bash
+```sh
 ping -c 3 archlinux.org
 ```
 
 ### update system clock
 
-```bash
+```sh
 timedatectl set-ntp true
 timedatectl status  # to check the service status
 ```
 
 ### Check our disks (for example it is 'nvme0n1')
 
-```bash
+```sh
 lsblk
 # or
 fdisk -l
@@ -164,7 +165,7 @@ fdisk -l
 
 ### Disk partition
 
-```bash
+```sh
 fdisk /dev/nvme0n1
 ```
 
@@ -187,67 +188,67 @@ NOTE: swap partition should be 1/2 of your RAM but not more than 8G, maximum 16G
 
 for boot
 
-```bash
+```sh
 mkfs.ext4 -c /dev/nvme0n1p1
 ```
 
 for root
 
-```bash
+```sh
 mkfs.ext4 -c /dev/nvme0n1p3
 ```
 
 for home
 
-```bash
+```sh
 mkfs.ext4 -c /dev/nvme0n1p4
 ```
 
 for swap
 
-```bash
+```sh
 mkswap -c /dev/nvme0n1p2
 ```
 
 swap activation
 
-```bash
+```sh
 swapon /dev/nvme0n1p2
 ```
 
 ### Mount root
 
-```bash
+```sh
 mount /dev/nvme01p3 /mnt
 ```
 
 ### Create home directory
 
-```bash
+```sh
 mkdir /mnt/home
 ```
 
 ### Create boot directory
 
-```bash
+```sh
 mkdir /mnt/boot
 ```
 
 ### Mount boot
 
-```bash
+```sh
 mount /dev/nvme01p1 /mnt/boot
 ```
 
 ### Mount home
 
-```bash
+```sh
 mount /dev/nvme01p4 /mnt/home
 ```
 
 ### Install arch
 
-```bash
+```sh
 pacstrap /mnt base base-devel linux linux-firmware linux-headers vim
 inetutils netctl dhcpcd man-pages man-db
 ```
@@ -256,25 +257,25 @@ inetutils netctl dhcpcd man-pages man-db
 
 generate fstab, force fstab to use UUID and write fstab to file
 
-```bash
+```sh
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
 ### Transfer from USB linux to Computer linux
 
-```bash
+```sh
 arch-chroot /mnt
 ```
 
 ### Set time zone
 
-```bash
+```sh
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 ```
 
 ### Generate time
 
-```bash
+```sh
 hwclock --systohc
 ```
 
@@ -282,40 +283,41 @@ hwclock --systohc
 
 uncomment langusges in:
 
-```bash
+```sh
 vim /etc/locale.gen
 en_US.UTF-8 UTF-8
 ```
 
 enable local
 
-```bash
+```sh
 locale-gen
 ```
 
 Set (wright in file) language in:
 
-```bash
+```sh
 vim /etc/locale.conf
 LANG=en_US.UTF-8
 ```
+
 ### Add hosts
 
 Wright your hostname in file:
 
-```bash
+```sh
 vim /etc/hostname
 ```
 
 Add matching entries to hosts
 
-```bash
+```sh
 vim /etc/hosts
 ```
 
 put the followimg in file:
 
-```bash
+```sh
 127.0.0.1   localhost
 ::1         localhost
 127.0.1.1   <hostname>.localdomine <hostname>
@@ -323,13 +325,14 @@ put the followimg in file:
 
 ### Set root password
 
-```bash
+```sh
 passwd
 > yourpassword
 ```
+
 ### set color in pacman
 
-```bash
+```sh
 vim /etc/pacman.conf
 # uncoment these lines:
 #Color
@@ -338,7 +341,7 @@ vim /etc/pacman.conf
 
 ### Set grub
 
-```bash
+```sh
 pacman -S grub                              # install grub
 grub-install --target=i386-pc /dev/nvme0n1  # Enable grub
 grub-mkconfig -o /boot/grub/grub.cfg        # Create config file for grub
@@ -346,7 +349,7 @@ grub-mkconfig -o /boot/grub/grub.cfg        # Create config file for grub
 
 ### Set Network Manager
 
-```bash
+```sh
 pacman -S networkmanager         # install NM
 systemctl enable NetworkManager  # enable Network Manager
 # only after below mentioned reboot
@@ -359,20 +362,20 @@ More info see in [wiki](https://wiki.archlinux.org/index.php/NetworkManager "NM 
 
 ### Exit from root and unmount USB
 
-```bash
+```sh
 exit
 umount -R /mnt
 ```
 
 ### Reboot
 
-```bash
+```sh
 reboot
 ```
 
 ### Check internet cinnection.
 
-```bash
+```sh
 ping -c 3 archlinux.org
 # If not, execute:
 nmcli device wifi connect <SSID or BSSID> password <yourpassword>  # Connect to a wifi network
@@ -381,7 +384,7 @@ nmcli device wifi connect <SSID or BSSID> password <yourpassword>  # Connect to 
 
 ### Correct mirror list via Reflector
 
-```bash
+```sh
 pacman -S reflector                    # install reflector
 cat /etc/pacman.d/mirrorlist           # check mirrors
 vim /etc/xdg/reflector/reflector.conf  # adjust config
@@ -391,7 +394,7 @@ cat /etc/pacman.d/mirrorlist           # check mirrors
 
 ### Update & upgrade system
 
-```bash
+```sh
 sudo pacman -Syu
 ```
 
@@ -399,33 +402,33 @@ sudo pacman -Syu
 
 Add new user (-m means home dir will be created)
 
-```bash
+```sh
 useradd -m <nameofuser>
 ```
 
 Add password for new user
 
-```bash
+```sh
 passwd <nameofuser>
 > password
 ```
 
 Add user to groups
 
-```bash
+```sh
 usermod -aG wheel <nameofuser>
 #audio,video,optical,storage --> ???
 ```
 
 Check user's groups
 
-```bash
+```sh
 groups <nameofuser>
 ```
 
 Open sudoers file `/etc/sudoers` and uncomment wheel group line `# %wheel ALL=(ALL) ALL`
 
-```bash
+```sh
 vim /etc/sudoers
 ```
 
@@ -434,25 +437,25 @@ Logout from root user and lgon as <nameofuser>
 
 ### Install xorg and video drivers
 
-```bash
+```sh
 sudo pacman -S xorg xorg-xinit xterm
 ```
 
 Copy `.xinitrc` to `home` directory, see instructions in [arch wiki](https://wiki.archlinux.org/title/Xinit)
 
-```bash
+```sh
 cp /etc/X11/xinit/xinitrc /home/nils/.xinitrc
 ```
 
-Check your video card (here I have nvidia and I will use proprietary driver)
+Check your video card. **Instruction below is for NVIDIA and proprietary driver.**
 
-```bash
+```sh
 lspci -k | grep -E "(VGA|3D)"
 ```
 
 Uninstal conflict drivers. IMPORTANT!
 
-```bash
+```sh
 sudo pacman -Rs xf86-video-amdgpu
 sudo pacman -Rs xf86-video-nouveau
 sudo pacman -Rs xf86-video-intel
@@ -460,68 +463,66 @@ sudo pacman -Rs xf86-video-intel
 
 Ceck if you have [mesa](mesa-utils.md) (if not, install it)
 
-```bash
+```sh
 sudo pacman -Qs mesa mesa-utils
 ```
 
 Install nvidia packages
 
-```bash
+```sh
 sudo pacman -S nvidia nvidia-utils
 ```
 
 Check xorg
 
-```bash
+```sh
 sudo startx
 ```
 
 Exit from xorg
 
-```bash
+```sh
 exit
 ```
 
 ### Install WM (qtile and additional packages for it)
 
-```bash
+```sh
 sudo pacman -S qtile python-pip python-setuptools
-
-# probably you will also need the following pakages: python-psutil
-python-iwlib python-keyring python-dateutil python-pyxdg python-mpd2
+# probably you will also need the following pakages:
+sudo pacman -S python-psutil python-iwlib python-keyring python-dateutil python-pyxdg python-mpd2
 ```
 
 Put the following line in `.xinitrc`
 
-```
+```sh
 # comment lines from "twm..." to "exec xterm..." and put below:
-
 exec qtile start
 ```
 
 Start qtile from tty by command:
 
-```bash
+```sh
 startx
 ```
 
 show mod keys (work only if WM starts):
 
-```bash
+```sh
 xmodmap -pm
 ```
 
 ### Install fonts
 
-```bash
+```sh
 sudo pacman -S ttf-jetbrains-mono
 ```
 
-probably plus `ttf-linux-libertine` or: `noto-fonts`
+probably plus `ttf-linux-libertine` or `noto-fonts`, see also [fonts-emojy-utf8](emoji-and-utf8.md)
 
 ### Install additional important packages
 
-```bash
+```sh
 sudo pacman -S alacritty git openssh gnupg pass rsync veracrypt stow firefox
 mc xclip
 ```
@@ -545,14 +546,14 @@ packages description:
 
 put in file `vim ~/.bash_profile`
 
-```bash
+```sh
 export EDITOR="vim"
 export BROWSER="firefox"
 ```
 
 ### Install audio packages
 
-```bash
+```sh
 sudo pacman -S pulseaudio pulseaudio-alsa alsa-utils
 ```
 
@@ -562,12 +563,11 @@ package description:
 * pulseaudio-alsa  --> ALSA Configuration for PulseAudio
 * alsa-utils       --> Advanced Linux Sound Architecture - Utilities
 
-Set up sound, instructions see in
-[wiki](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture "alsamixer archwiki")
+Set up sound, instructions see in [wiki](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture "alsamixer archwiki")
 
 ### Install video packages
 
-```bash
+```sh
 sudo pacman -S mpv youtube-dl
 ```
 
@@ -581,7 +581,7 @@ packages description:
 
 ### Install workflow packages
 
-```bash
+```sh
 sudo pacman -S figlet mutt udisks2 pycharm-community-edition moc
 htop calcurse sxiv zathura zathura-pdf-mupdf zathura-djvu
 pacman-contrib github-cli newsboat perl-image-exiftool calibre ffmpeg krita
@@ -618,23 +618,13 @@ packages description:
 
 ### Turn off PC:
 
-```bash
+```sh
 sudo shutdown -h now
 ```
 
 ---
 
 ## Misc
-
-### Create RU keyboard layout
-
-For using `Shift + Ctrl` for US-RU change:
-
-```bash
-localectl --no-convert set-x11-keymap us,ru "" "" grp:ctrl_shift_toggle
-```
-
-Restart xinit
 
 ### STEAM installation.
 
@@ -650,7 +640,7 @@ Include = /etc/pacman.d/mirrorlist
 
 install proprietary 32-bit version OpenGL graphics driver
 
-```bash
+```sh
 sudo pacman -S lib32-nvidia-utils
 ```
 
@@ -659,19 +649,19 @@ Generated `en_US.UTF-8` locale, preventing invalid pointer error
 The GUI heavily uses the Arial font. See Microsoft fonts. An alternative is to
 use `ttf-liberation`
 
-```bash
+```sh
 sudo pacman -S ttf-liberation
 ```
 
 install `wqy-zenhei` to add support for Asian languages
 
-```bash
+```sh
 sudo pacman -S wqy-zenhei
 ```
 
 install steam
 
-```bash
+```sh
 sudo pacman -S steam
 ```
 
@@ -686,29 +676,42 @@ sudo pacman -S steam
 Например, можно установить английскую и русскую раскладки, которые будут
 переключаться по `ctrl+shift`:
 
-```bash
+```sh
 localectl --no-convert set-x11-keymap us,ru "" "" grp:ctrl_shift_toggle
 ```
+
+restart xinit
+
+#### var 1.1
+
+Например, можно установить английскую, русскую раскладки, которые будут
+переключаться по `AltGr`:
+
+```sh
+localectl --no-convert set-x11-keymap us,ru "" "" grp:ralt_toggle
+```
+
 restart xinit
 
 #### var 2
+
 (RALT --> ENG, Shift + RALT --> RUS)
 
 Check keyboard settigs on the your computer:
 
-```bash
+```sh
 setxkbmap -layout us,ru -print
 ```
 
 create file config:
 
-```bash
+```sh
 touch ~/.config/xkb/config
 ```
 
 Write the result in the file:
 
-```bash
+```sh
 setxkbmap -layout us,ru -print > ~/.config/xkb/config
 ```
 
@@ -723,7 +726,7 @@ key <RALT> { [ ISO_First_Group, ISO_Last_Group ] };
 
 Load config:
 
-```bash
+```sh
 xkbcomp $HOME/.config/xkb/config $DISPLAY
 ```
 
@@ -735,27 +738,28 @@ source finde [here](https://m.habr.com/ru/post/486872/ "instructions")
 
 disable dhcpcd on ethernet
 
-```bash
+```sh
 sudo systemctl disable dhcpcd@enp8s0.service
 ```
 
 disable netctl on wifi
 
-```bash
+```sh
 sudo systemctl disable netctl-auto@wlan0.service
 ```
 
 enable NM
 
-```bash
+```sh
 sudo systemctl enable NetworkManager.service
 ```
 
 reboot
 
-```bash
+```sh
 reboot
 ```
+
 ### System Time
 
 https://wiki.archlinux.org/title/System_time#Time_zone

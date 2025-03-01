@@ -1,8 +1,11 @@
 ## qtile
 
 ### links
-https://github.com/qtile/qtile
-https://wiki.archlinux.org/title/Qtile
-https://docs.qtile.org/en/stable/manual/ref/widgets.html#battery
+
+1. https://github.com/qtile/qtile
+2. https://wiki.archlinux.org/title/Qtile
+3. https://docs.qtile.org/en/stable/manual/ref/widgets.html#battery
+
+
 
 ---

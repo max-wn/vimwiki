@@ -1,14 +1,11 @@
 ## tldr
 
-Simplified and community-driven man pages
+Command line client for tldr, a collection of simplified man pages.
 
 ### links
 
-https://formulae.brew.sh/formula/tldr#default
-https://archlinux.org/packages/community/any/tldr://archlinux.org/packages/community/any/tldr/
-https://github.com/tldr-pages/tldr-python-client
-
-
+1. https://archlinux.org/packages/extra/any/tldr/
+2. https://github.com/tldr-pages/tldr-python-client
 
 ---
 
