@@ -1,10 +1,13 @@
 ## vdirsyncer
 
-### links
-https://vdirsyncer.pimutils.org/en/stable/tutorials/icloud.html
-https://vdirsyncer.pimutils.org/en/stable/tutorial.html
+Synchronize CalDAV and CardDAV
 
+### links
+
+1. https://vdirsyncer.pimutils.org/en/stable/tutorials/icloud.html
+2. https://vdirsyncer.pimutils.org/en/stable/tutorial.html
+3. https://archlinux.org/packages/extra/any/vdirsyncer/
 
 ---
 
-THE END
+[[/index|Get Back To Index]]

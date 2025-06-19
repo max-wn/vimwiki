@@ -4,13 +4,15 @@ is a command line dictionary. It provides access to dictionaries in StarDict's
 format.
 
 ### links
-https://wiki.archlinux.org/title/Sdcv
-https://formulae.brew.sh/formula/sdcv#default
-https://dushistov.github.io/sdcv/
-https://github.com/Dushistov/sdcv
+
+1. https://wiki.archlinux.org/title/Sdcv
+2. https://formulae.brew.sh/formula/sdcv#default
+3. https://dushistov.github.io/sdcv/
+4. https://github.com/Dushistov/sdcv
 
 #### dictionaries database
-https://web.archive.org/web/20200702000038/http://download.huzheng.org/
+
+1. https://web.archive.org/web/20200702000038/http://download.huzheng.org/
 
 #### Adding dictionaries
 

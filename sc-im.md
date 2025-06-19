@@ -47,10 +47,14 @@ sc-im Lesson1 - Navigation.sc
 
 ### sc-im-md integrator
 
-**link and description**
-https://github.com/mipmip/vim-scimark  # Edit embedded markdown tables with SC-IM in a Vim terminal window.
+Edit embedded markdown tables with SC-IM in a Vim terminal window.
+
+**Link:**
+
+1. https://github.com/mipmip/vim-scimark
 
 **Usage:**
+
 1. Point your cursor on a markdown table and press `<leader>sc`
 2. From here you are inside `sc-im`.
 3. The most minimal table scimark reckognizes is `||`.

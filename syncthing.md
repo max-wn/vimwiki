@@ -6,3 +6,7 @@ Syncthing is an open-source file synchronization client/server application writt
 
 1. https://wiki.archlinux.org/title/Syncthing
 2. https://syncthing.net/
+
+---
+
+[[/index|Get Back To Index]]

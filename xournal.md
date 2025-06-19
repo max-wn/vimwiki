@@ -1,9 +1,9 @@
 ## xoupnal
 
 ### links
-https://wiki.archlinux.org/title/Xournal%2B%2B
 
-https://github.com/xournalpp/xournalpp
+1. https://wiki.archlinux.org/title/Xournal%2B%2B
+2. https://github.com/xournalpp/xournalpp
 
 ---
 

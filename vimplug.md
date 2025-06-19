@@ -3,8 +3,8 @@
 A minimalist Vim plugin manager.
 
 ### links
-https://github.com/junegunn/vim-plug
 
+1. https://github.com/junegunn/vim-plug
 
 ---
 

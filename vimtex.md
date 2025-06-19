@@ -76,3 +76,7 @@ backslash. ac includes the backslash.
 This is only a tiny sliver of what VimTeX offers.
 Read the README for an overview, and read :h vimtex for a full description of
 all things VimTeX.
+
+---
+
+[[/index|Get Back To Index]]

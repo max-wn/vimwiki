@@ -2,9 +2,8 @@
 
 ### links
 
-https://github.com/tools-life/taskwiki
-https://samgriesemer.com/Taskwiki
-
+1. https://github.com/tools-life/taskwiki
+2. https://samgriesemer.com/Taskwiki
 
 ---
 

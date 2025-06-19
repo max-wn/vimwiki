@@ -2,24 +2,18 @@
 
 ### links
 
-taskwarrior
-https://taskwarrior.org/download/
-https://taskwarrior.org/docs://taskwarrior.org/docs/
-https://taskwarrior.org/docs/best-practices/
-https://samgriesemer.com/Taskwarrior
-https://github.com/GothenburgBitFactory/taskwarrior
-
-brew for taskwarrior
-https://formulae.brew.sh/formula/task
-https://formulae.brew.sh/formula/taskd#default
-https://formulae.brew.sh/formula/tasksh#defaul://formulae.brew.sh/formula/tasksh#default
+1. https://taskwarrior.org/download/
+2. https://taskwarrior.org/docs://taskwarrior.org/docs/
+3. https://taskwarrior.org/docs/best-practices/
+4. https://samgriesemer.com/Taskwarrior
+5. https://github.com/GothenburgBitFactory/taskwarrior
 
 ### commands
 
 Your tasks are now stored in `taskchampion.sqlite3` in your `task` directory. Backup this file!
 
 example
-```bash
+```sh
 # task commands
 task add Prepare the first draft of the proposal due:friday  # Create task
 task add Read Taskwarrior documents later  # Create task
@@ -34,8 +28,6 @@ task ghistory
 task calendar
 task burndown.daily
 ```
-
-
 
 other examples see in `tldr`
 

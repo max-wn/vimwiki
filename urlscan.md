@@ -7,8 +7,9 @@ mailreader to allow you to easily launch a Web browser for URLs contained in
 email messages. It is a replacement for the "urlview" program.
 
 ### links
-https://github.com/firecat53/urlscan
-https://pypi.org/project/urlscan/
+
+1. https://github.com/firecat53/urlscan
+2. https://pypi.org/project/urlscan/
 
 ---
 

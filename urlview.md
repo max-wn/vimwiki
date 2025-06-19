@@ -1,9 +1,9 @@
 ## urlview
 
 ### links
-https://aur.archlinux.org/packages/urlview
-https://formulae.brew.sh/formula/urlview#default
 
+1. https://aur.archlinux.org/packages/urlview
+2. https://formulae.brew.sh/formula/urlview#default
 
 ---
 

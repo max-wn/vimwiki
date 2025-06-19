@@ -1,9 +1,14 @@
 ## xdg-ninja
 
+A shell script which checks your `$HOME` for unwanted files and directories
+
 ### links
-https://github.com/b3nj5m1n/xdg-ninja
+
+1. https://github.com/b3nj5m1n/xdg-ninja
+2. https://aur.archlinux.org/packages/xdg-ninja
 
 ### usage
+
 Clone the repository somewhere, then run the `./xdg-ninja.sh script`.
 
 To install xdg-ninja with Homebrew, run `brew install xdg-ninja` to install the

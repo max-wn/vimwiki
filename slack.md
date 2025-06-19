@@ -20,4 +20,4 @@ create a snippet
 
 ---
 
-THE END
+[[/index|Get Back To Index]]

@@ -3,8 +3,9 @@
 A youtube-dl fork with additional features and fixes.
 
 ### links
-https://wiki.archlinux.org/title/Yt-dlp
-More information: https://github.com/yt-dlp/yt-dlp.
+
+1. https://wiki.archlinux.org/title/Yt-dlp
+2. More information: https://github.com/yt-dlp/yt-dlp.
 
 ### commands (from tldr)
 

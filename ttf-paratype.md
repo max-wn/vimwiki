@@ -7,3 +7,7 @@ Provides: ttf-font, ttf-pt-mono, ttf-pt-sans, ttf-pt-sans-expert, ttf-pt-serif, 
 
 1. https://aur.archlinux.org/packages/ttf-paratype
 2. https://www.paratype.com/
+
+---
+
+[[/index|Get Back To Index]]

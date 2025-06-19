@@ -2,10 +2,10 @@
 
 ### links
 
-https://github.com/vimwiki/vimwiki/tree/dev
-https://vimwiki.github.io/
-https://vimwiki.github.io/vimwikiwiki/Tips%20and%20Snips.html
-https://samgriesemer.com/Vimwiki
+1. https://github.com/vimwiki/vimwiki/tree/dev
+2. https://vimwiki.github.io/
+3. https://vimwiki.github.io/vimwikiwiki/Tips%20and%20Snips.html
+4. https://samgriesemer.com/Vimwiki
 
 ### basis
 

@@ -108,7 +108,7 @@
 [ttf-paratype](ttf-paratype.md) --> ParaType font family with extended cyrillic and latin character sets
 [urlscan](urlscan.md) --> [mutt](mutt) and terminal url selector
 [urlview](urlview.md) --> a curses URL parser for text files
-[vdirsyncer](vdirsyncer.md) -->
+[vdirsyncer](vdirsyncer.md) --> Synchronize CalDAV and CardDAV
 [veracrypt](veracrypt.md) -->
 [vim](vim.md) --> terminal text editor
 [vimplug](vimplug.md) --> a minimalist Vim plugin manager
