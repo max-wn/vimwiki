@@ -48,7 +48,7 @@
 [ffmpeg](ffmpeg) --> complete, cross-platform solution to record, convert and stream audio and video
 [firefox](firefox.md) --> web browser
 [gh](gh.md) --> GitHub command-line tool
-[git](git.md) --> version control system
+[git](git.md) --> version control [system](system)
 [glow](glow.md) -->
 [gnupg](gnupg.md) -->
 [gtypist](gtypist.md) --> universal typing tutor

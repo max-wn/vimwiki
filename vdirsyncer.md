@@ -8,6 +8,13 @@ Synchronize CalDAV and CardDAV
 2. https://vdirsyncer.pimutils.org/en/stable/tutorial.html
 3. https://archlinux.org/packages/extra/any/vdirsyncer/
 
+### usage
+
+```sh
+vdirsyncer --help
+vdirsyncer sync    # synchronize the given collections or pairs
+```
+
 ---
 
 [[/index|Get Back To Index]]
