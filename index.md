@@ -30,6 +30,7 @@
 
 [01 foss](foss.md) --> software I use
 [02 security tips](sectips.md) --> initial database
+[LaTeX](latex.md) --> TeX typesetting system
 [abook](abook.md) --> text-based addressbook designed for use with mutt
 [alacritty](alacritty.md) -->
 [anki](anki) --> helps you remember words/phrases in a foreign language efficiently
@@ -60,7 +61,6 @@
 [keybindings](keybindings.md) -->
 [khal](khal.md) --> CLI calendar application build around CalDAV
 [khard](khard.md) --> console CardDAV client
-[LaTeX](latex.md) --> TeX typesetting system
 [lf](lf) --> a terminal file manager inspired by ranger
 [lynx](lynx.md) --> a text browser for the world wide web
 [markdown](markdown.md) --> is a lightweight markup language for creating formatted text
@@ -121,6 +121,7 @@
 [yt-dlp](yt-dlp) --> download videos and audio from thousand websites
 [zathura](zathura.md) --> minimalistic document viewer (PDF)
 [zip and unzip](zip-unzip.md) --> archiving and compression
+[zotero](zotero.md) --> A tool to help you collect, organize, cite, and share your research sources.
 
 ---
 

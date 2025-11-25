@@ -4,17 +4,12 @@
 
 #### www
 
-https://wiki.archlinux.org/title/File_systems  # file systems
-
-https://wiki.archlinux.org/title/Badblocks#  # badblocks is a program to test storage devices for bad blocks
-
-https://wiki.archlinux.org/title/USB_storage_devices  # This document describes how to use the popular USB memory sticks with Linux.
-
-https://losst.pro/kak-posmotret-usb-ustrojstva-linux
-
-https://archlinux.org/packages/core/x86_64/usbutils/
-
-https://man.archlinux.org/man/lsusb.8.en
+1. https://wiki.archlinux.org/title/File_systems  # file systems
+2. https://wiki.archlinux.org/title/Badblocks#  # badblocks is a program to test storage devices for bad blocks
+3. https://wiki.archlinux.org/title/USB_storage_devices  # This document describes how to use the popular USB memory sticks with Linux.
+4. https://losst.pro/kak-posmotret-usb-ustrojstva-linux
+5. https://archlinux.org/packages/core/x86_64/usbutils/
+6. https://man.archlinux.org/man/lsusb.8.en
 
 #### mount cell phone
 
@@ -105,7 +100,13 @@ Unmount USB
 sudo umount /mnt/usbstick
 ```
 
-If you have problems with mounting USB, in `/dev` you do indeed see the hard drives as `/sda` and `/sdb` etc. If you go to `/dev/disk/by-id/` you will see a different list by unique device names. When you mount it, use that name just as you would use `/sda`. The advantage of using unique device names instead of names like `/sda`, is the device is mounted the the same way each time regardless of boot order or thumb drives left in while rebooting which can change the usb drive order, etc.
+If you have problems with mounting USB, in `/dev` you do indeed see the hard
+drives as `/sda` and `/sdb` etc. If you go to `/dev/disk/by-id/` you will see a
+different list by unique device names. When you mount it, use that name just as
+you would use `/sda`. The advantage of using unique device names instead of
+names like `/sda`, is the device is mounted the the same way each time
+regardless of boot order or thumb drives left in while rebooting which can
+change the usb drive order, etc.
 
 Example of mount command:
 ```sh
@@ -121,13 +122,10 @@ chown -R $USER ~/path/to/file
 
 #### links
 
-https://wiki.archlinux.org/title/Cryptsetup
-
-https://videos.lukesmith.xyz/w/qxMiq53aTieALZwumuxG6G
-
-https://wiki.archlinux.org/title/Btrfs
-
-https://wiki.archlinux.org/title/Dm-crypt/Device_encryption#Cryptsetup_usage
+1. https://wiki.archlinux.org/title/Cryptsetup
+2. https://videos.lukesmith.xyz/w/qxMiq53aTieALZwumuxG6G
+3. https://wiki.archlinux.org/title/Btrfs
+4. https://wiki.archlinux.org/title/Dm-crypt/Device_encryption#Cryptsetup_usage
 
 #### Commands
 

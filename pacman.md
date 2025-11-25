@@ -25,6 +25,14 @@
 | ---                  | ---                                    |
 | `pacman -Qs <query>` | Search installed packages for keywords |
 
+To browse all installed packages with an instant preview of each package:
+```sh
+pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
+```
+This uses [fzf](fzf.md) to present a two-pane view listing all packages with package info
+shown on the right. Enter letters to filter the list of packages; use arrow keys
+(or `Ctrl-j`/`Ctrl-k`) to navigate; press `Enter` to see package info under less.
+
 ### Orphans
 
 | Command                       | Description                 |

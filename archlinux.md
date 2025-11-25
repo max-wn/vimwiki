@@ -4,6 +4,7 @@
 
 1. https://wiki.archlinux.org/title/Installation_guide#Post-installation
 2. https://wiki.archlinux.org/title/General_recommendations
+3. https://videos.lukesmith.xyz/w/n1cMQYYzwPoegM2oXfz2iC  # Install Artix or Arch Linux (Encrypted system)
 
 ## download arch iso
 
