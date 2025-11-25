@@ -159,6 +159,9 @@
 
 [photo](photo.md) --> photography project
 
+## power-options
+[power-options-gtk](power-options-gtk.md) -- gui power manager
+
 ---
 
 **THE END**
