@@ -9,7 +9,6 @@ TODO
 	- [ ] fonts   https://www.freecodecamp.org/news/things-to-consider-when-picking-fonts/
 	- [ ] steganography https://www.freecodecamp.org/news/what-is-steganography-hide-data-inside-data/
 
-
 ---
 
 [[/index|Get Back To Index]]

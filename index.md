@@ -81,6 +81,7 @@
 [notmuch](notmuch.md) --> mail indexer
 [nsxiv](nsxiv.md) --> neo (or new or not) simple (or small or suckless) X image viewer
 [nvidia](nvidia.md) -->
+[obsidian](obsidian) --> knowledge base that works on top of a local folder of plain text Markdown files
 [pacman](pacman.md) -->
 [pandoc](pandoc.md) --> swiss-army knife of markup format conversion
 [pass](pass.md) --> stores, retrieves, generates, and synchronizes passwords securely
@@ -101,7 +102,7 @@
 [slack](slack.md) -->
 [ssh](ssh.md) --> for encrypted communication sessions
 [syncthing](syncthing.md) -->
-[taskwarrior](taskwarrior.md) -->
+[taskwarrior](taskwarrior.md) --> Taskwarrior, a command-line todo list manager
 [taskwiki](taskwiki.md) --> project management in vim for VimWiki and Taskwarrior
 [termdown](termdown.md) --> countdown timer and stopwatch in your terminal
 [tldr](tldr.md) --> command line client for tldr, a collection of simplified man pages.

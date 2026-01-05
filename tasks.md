@@ -38,6 +38,10 @@ TODO
 	- [ ] https://wiki.archlinux.org/title/Xorg/Keyboard_configuration
 	- [ ] https://habr.com/ru/articles/486872/
 
+- [ ] Arch and encryption
+	- [ ] https://wiki.archlinux.org/title/Security
+	- [ ] https://wiki.archlinux.org/title/GnuPG
+
 
 DONE
 

@@ -5,12 +5,14 @@
 1. https://taskwarrior.org/download/
 2. https://taskwarrior.org/docs://taskwarrior.org/docs/
 3. https://taskwarrior.org/docs/best-practices/
-4. https://samgriesemer.com/Taskwarrior
-5. https://github.com/GothenburgBitFactory/taskwarrior
+4. https://archlinux.org/packages/extra/x86_64/task/
+5. https://samgriesemer.com/Taskwarrior
+6. https://github.com/GothenburgBitFactory/taskwarrior
 
 ### commands
 
-Your tasks are now stored in `taskchampion.sqlite3` in your `task` directory. Backup this file!
+- [X] Your tasks are now stored in `taskchampion.sqlite3` in your `task`
+      directory. Backup this file!
 
 example
 ```sh
