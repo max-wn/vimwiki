@@ -13,7 +13,7 @@ https://man.archlinux.org/man/bzip2.1
 bzip2, bunzip2 - a block-sorting file compressor, v1.0.8 bzcat - decompresses
 files to stdout bzip2recover - recovers data from damaged bzip2 files
 
-```
+```sh
 bzip2 [ -cdfkqstvzVL123456789 ] [ filenames ... ]
 bunzip2 [ -fkvsVL ] [ filenames ... ]
 bzcat [ -s ] [ filenames ... ]

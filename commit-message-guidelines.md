@@ -1,12 +1,14 @@
 ## Commit Message Guidelines
 
-Rules over how git commit messages can be formatted. This leads to **more readable messages** that are easy to follow when looking through the **project history**.
+Rules over how git commit messages can be formatted. This leads to **more
+readable messages** that are easy to follow when looking through the **project
+history**.
 
 ### Source Links
 
-[Angular Commit Message Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
-[Семантическое Версионирование 2.0.0](https://semver.org/lang/ru/)
-[Соглашение о коммитах](https://www.conventionalcommits.org/ru/v1.0.0/)
+1. [Angular Commit Message Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
+2. [Семантическое Версионирование 2.0.0](https://semver.org/lang/ru/)
+3. [Соглашение о коммитах](https://www.conventionalcommits.org/ru/v1.0.0/)
 
 ### Commit Message Format
 
@@ -31,6 +33,7 @@ The footer should contain a [closing reference to an issue](https://help.github.
 ```sh
 docs(changelog): update changelog to beta.5
 ```
+
 ```sh
 fix(release): need to depend on latest rxjs and zone.js
 
@@ -38,9 +41,11 @@ The version in our package.json gets copied to the one we publish, and users nee
 ```
 
 ### Revert
+
 If the commit reverts a previous commit, it should begin with `revert: `, followed by the header of the reverted commit. In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
 
 ### Type
+
 Must be one of the following:
 
 * **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
@@ -54,6 +59,7 @@ Must be one of the following:
 * **test**: Adding missing tests or correcting existing tests
 
 ### Scope
+
 The scope should be the name of the npm package affected (as perceived by the person reading the changelog generated from commit messages.
 
 The following is the list of supported scopes:
@@ -84,6 +90,7 @@ There are currently a few exceptions to the "use package name" rule:
 * none/empty string: useful for `style`, `test` and `refactor` changes that are done across all packages (e.g. `style: add missing semicolons`)
 
 ### Subject
+
 The subject contains a succinct description of the change:
 
 * use the imperative, present tense: "change" not "changed" nor "changes"
@@ -91,14 +98,18 @@ The subject contains a succinct description of the change:
 * no dot (.) at the end
 
 ### Body
-Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
-The body should include the motivation for the change and contrast this with previous behavior.
+
+Just as in the **subject**, use the imperative, present tense: "change" not
+"changed" nor "changes". The body should include the motivation for the change
+and contrast this with previous behavior.
 
 ### Footer
-The footer should contain any information about **Breaking Changes** and is also the place to
-reference GitHub issues that this commit **Closes**.
 
-**Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines. The rest of the commit message is then used for this.
+The footer should contain any information about **Breaking Changes** and is also
+the place to reference GitHub issues that this commit **Closes**.
+
+**Breaking Changes** should start with the word `BREAKING CHANGE:` with a space
+or two newlines. The rest of the commit message is then used for this.
 
 ---
 

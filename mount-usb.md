@@ -158,7 +158,7 @@ sudo umount /mnt/usbstick  # unmount
 sudo cryptsetup close Backup  # close veracrypt container
 ```
 
-### misc
+### FAT
 
 If you need to know which type of FAT file system a partition uses, use the file command:
 
@@ -200,6 +200,42 @@ sudo journalctl --grep=PATTERN  # print log entries from the systemd journal whe
 	-f  # show only the most recent journal entries, and continuously print new entries as they are appended to the journal
 # example:
 sudo journalctl --grep=trim  # primt all trim logs
+```
+
+### show drives
+
+```sh
+lsblk -f  # show with type, UUID and spaces
+# or
+lsblk     # short list
+```
+
+In `/dev` you do indeed see the hard drives as `/sda` and `/sdb` etc. If you go
+to `/dev/disk/by-id/` you will see a different list by unique device names.
+
+example:
+```sh
+mount /dev/disk/by-id/usb-id-name /mnt/usbstick
+```
+
+### badblocks
+
+1. for badblicks see instructions in : https://wiki.archlinux.org/title/Badblocks
+2. checking a disk for bad blocks before formatting it:
+
+```sh
+mkfs.ext4 -c /dev/device
+# Use `-cc` to do a read-write bad block test
+```
+
+3. Read-write test (warning: destructive):
+
+```sh
+badblocks -wsv /dev/device
+# Options:
+#     `-w` do a destructive write test
+#     `-s` show progress
+#     `-v` be "verbose" and output bad sectors detected to stdout
 ```
 
 ---

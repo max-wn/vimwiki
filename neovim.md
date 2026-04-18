@@ -6,6 +6,11 @@
 2. https://formulae.brew.sh/formula/neovim#default
 3. https://github.com/neovim/neovim
 
+### plugins
+
+1. [vimplug](vimplug.md)  --> a minimalist Vim plugin manager
+2. [vimtex](vimtex)  --> plugin for [LaTeX](latex.md)
+
 ### tips
 
 Open nvim and enter the following:

@@ -117,6 +117,7 @@
 [vimwiki](vimwiki-basis.md) --> personal wiki for Vim
 [w3m](w3m) --> text-based Web browser as well as pager
 [wikiman](wikiman) --> offline search engine for manual pages, Arch Wiki, Gentoo Wiki and other documentation
+[wireshark](wireshark) --> free and open-source packet analyzer
 [xdg-ninja](xdg-ninja) --> a shell script which checks your `$HOME` for unwanted files and directories
 [xournal](xournal) --> handwriting notetaking software with PDF annotation support
 [yt-dlp](yt-dlp) --> download videos and audio from thousand websites

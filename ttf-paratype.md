@@ -1,7 +1,8 @@
 ## ttf-paratype
 
 ParaType font family with extended cyrillic and latin character sets
-Provides: ttf-font, ttf-pt-mono, ttf-pt-sans, ttf-pt-sans-expert, ttf-pt-serif, ttf-pt-serif-expert
+Provides: ttf-font, ttf-pt-mono, ttf-pt-sans, ttf-pt-sans-expert, ttf-pt-serif,
+ttf-pt-serif-expert
 
 ### links
 

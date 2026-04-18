@@ -17,8 +17,11 @@ curl https://www.cl.cam.ac.uk/~mgk25/ucs/examples/UTF-8-demo.txt  # UTF-8 test f
 
 1. https://github.com/ryanoasis/nerd-fonts
 2. https://www.paratype.com/collections/pt/44157
-3. https://aur.archlinux.org/packages/ttf-paratype --> ParaType font family with
-   extended cyrillic and latin character sets.
+3. https://aur.archlinux.org/packages/ttf-paratype  --> ParaType font family with extended cyrillic and latin character sets.
+4. https://archlinux.org/packages/extra/any/terminus-font/  --> Terminus font
+5. https://terminus-font.sourceforge.net/  --> Terminus font
+6. https://s9w.io/font_compare/  --> programming fonts compare
+7. https://wiki.archlinux.org/title/Fonts
 
 ---
 
