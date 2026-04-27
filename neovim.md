@@ -8,14 +8,30 @@
 
 ### plugins
 
-1. [vimplug](vimplug.md)  --> a minimalist Vim plugin manager
-2. [vimtex](vimtex)  --> plugin for [LaTeX](latex.md)
+[vimplug](vimplug.md)  --> a minimalist Vim plugin manager
+
+1. tpope/vim-surround
+2. preservim/nerdtree
+3. junegunn/goyo.vim
+4. jreybert/vimagit
+5. vimwiki/vimwiki
+6. vim-airline/vim-airline
+7. tpope/vim-commentary
+8. ap/vim-css-color
+9. [vimtex](vimtex)  --> plugin for [LaTeX](latex.md)
+10. gruvbox-community/gruvbox
+11. tools-life/taskwiki --> not installed
+12. vim-pandoc/vim-pandoc --> not installed
+13. vim-pandoc/vim-pandoc-syntax --> not installed
+14. abeleinin/papyrus --> not installed
+15. nanotech/jellybeans.vim --> not installed
+16. mipmip/vim-scimark
 
 ### tips
 
-Open nvim and enter the following:
+For health-check, open nvim and enter the command `:checkhealth`
 
-`:checkhealth`
+Spell-check set to `<leader>o` ('o' for 'orthography').
 
 ---
 

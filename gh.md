@@ -3,15 +3,17 @@
 GitHub command-line tool
 
 ### links
-https://formulae.brew.sh/formula/gh#default
-https://archlinux.org/packages/community/x86_64/github-cli/
-https://cli.github.com/
-https://github.com/cli/cli
+
+1. https://formulae.brew.sh/formula/gh#default
+2. https://archlinux.org/packages/community/x86_64/github-cli/
+3. https://cli.github.com/
+4. https://github.com/cli/cli
 
 ### commands
 
 #### create a new repository on the command line
-```bash
+
+```sh
 cd ~/your-repo
 echo "# your-repo" >> README.md
 git init
@@ -23,7 +25,8 @@ git push -u origin master
 ```
 
 #### push an existing repository from the command line
-```bash
+
+```sh
 git remote add origin git@github.com:your-acc/your-repo.git
 git branch -M master
 git push -u origin master

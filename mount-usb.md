@@ -19,6 +19,10 @@
 
 [disks](disks.md) -- check your disks :)
 
+#### usb management
+
+[usb management](usb-management.md)
+
 ### Create filesystems
 
 find badblocks (execute as sudo)

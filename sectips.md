@@ -1,21 +1,22 @@
 ## Sequrity Tips
 
 ### arch
-https://wiki.archlinux.org/title/Security
-https://wiki.archlinux.org/title/Data-at-rest_encryption
+
+1. https://wiki.archlinux.org/title/Security
+2. https://wiki.archlinux.org/title/Data-at-rest_encryption
 
 ### transfer files and folders
-https://github.com/schollz/croc
-https://schollz.com/tinker/croc6/
+
+1. https://github.com/schollz/croc
+2. https://schollz.com/tinker/croc6/
 
 ### проверка сайтов
-https://osint.sh://osint.sh/
 
-### A terminal Matrix client written in Go using mautrix and mauview.
-https://github.com/tulir/gomuks
+1. https://osint.sh://osint.sh/
 
+### A terminal Matrix client
 
-
+1. https://github.com/tulir/gomuks
 
 ---
 

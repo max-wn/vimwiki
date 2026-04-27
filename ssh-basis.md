@@ -60,7 +60,7 @@ eval "$(ssh-agent -s)"  # Start the ssh-agent in the background
 ssh-add ~/.ssh/id_ed25519  # Add your SSH ***private*** key to the ssh-agent
 ```
 
-Adding a new  ***public*** SSH key to your GitHub account and test connection
+Adding a new  **public** SSH key to your GitHub account and test connection
 
 ```sh
 pbcopy < ~/.ssh/id_ed25519.pub  # Copy the SSH public key to your clipboard and paste it to SSH settings on github site
@@ -69,7 +69,8 @@ gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
 ssh -T git@github.com           # testing your SSH connection
 ```
 
-Verify that the fingerprint in the message you see matches [GitHub's RSA public key fingerprint][001]. If it does, then type `yes`
+Verify that the fingerprint in the message you see matches
+[GitHub's RSA public key fingerprint][001]. If it does, then type `yes`
 
 
 ### ssh without password for one session only

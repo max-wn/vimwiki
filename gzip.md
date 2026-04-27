@@ -7,6 +7,7 @@ bzip2
 rar --> Both the format and the rar utility are proprietary.
 
 ### links
+
 1. https://wiki.archlinux.org/title/Tar
 2. https://archlinux.org/packages/core/x86_64/gzip/
 3. https://wiki.archlinux.org/title/Gzip
@@ -17,7 +18,6 @@ examples:
 ```sh
 # Archive 1 or more files:
 rar a path/to/archive_name.rar path/to/file1 path/to/file2 path/to/file3
-
 # Unarchive 1 archive:
 rar x path/to/archive_name.rar
 ```

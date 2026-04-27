@@ -1,4 +1,4 @@
-## [ssh](ssh)
+## ssh
 
 ### links
 
@@ -42,15 +42,23 @@ journalctl -fu sshd  # see logs of ssh where:
 		     # -u -> unit (here unit is sshd)
 ```
 
-The `ssh-copy-id` command will ask for your server's root password and log you in briefly. What this does is that it puts your public SSH key fingerprint on your server in a file `/root/.ssh/authorized_keys`. This file in turn allows approved SSH keys to log in without passwords.
-Note that you can also replace `root` with a username of an account on the server if you had made a non-root user that you'd like to easily log into as well. For the username `user`, it will also store the key in `/home/user/.ssh/authorized_keys`.
+The `ssh-copy-id` command will ask for your server's root password and log you
+in briefly. What this does is that it puts your public SSH key fingerprint on
+your server in a file `/root/.ssh/authorized_keys`. This file in turn allows
+approved SSH keys to log in without passwords.
+
+Note that you can also replace `root` with a username of an account on the
+server if you had made a non-root user that you'd like to easily log into as
+well. For the username `user`, it will also store the key in
+`/home/user/.ssh/authorized_keys`.
 
 To test if this has worked, now try logging in normally to your server with ssh:
 ```sh
 ssh root@yourdomain.com
 ```
 
-If you find that this does not work try running the following, make sure you are in the directory where the keys where created.
+If you find that this does not work try running the following, make sure you are
+in the directory where the keys where created.
 ```sh
 chmod 700 ~/.ssh/
 chmod 644 ~/.ssh/id_rsa.pub

@@ -66,7 +66,7 @@
 [markdown](markdown.md) --> is a lightweight markup language for creating formatted text
 [matrix](matrix) --> ecosystem for open federated instant messaging and VoIP
 [mc](mc.md) --> file manager
-[moc](moc.md) -->
+[moc](moc.md) --> An ncurses console audio player with support for pulseaudio
 [mpd](mpd) --> music player daemon
 [mpv](mpv.md) --> video player
 [msmtp](msmtp.md) --> a mini smtp client

@@ -13,8 +13,6 @@ https://www.youtube.com/watch?v=I73dJ8NvV8U
 
 [TODO](tasks.md)
 
-
-
 ---
 
 [[/index|Get Back To Index]]

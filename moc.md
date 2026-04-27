@@ -1,5 +1,10 @@
 ## moc cheatsheet
 
+### links
+
+1. https://wiki.archlinux.org/title/MOC
+2. https://moc.daper.net/
+
 ### basis
 
 To use config and keymap files, copy them to (for Linux):

@@ -2,7 +2,7 @@
 
 ### commands
 
-```bash
+```sh
 # list mirrors
 cat /etc/pacman.d/mirrorlist
 
@@ -15,8 +15,8 @@ systemctl start reflector.service
 
 ### links:
 
-https://wiki.archlinux.org/title/Reflector
-https://man.archlinux.org/man/reflector.1#EXAMPLES
+1. https://wiki.archlinux.org/title/Reflector
+2. https://man.archlinux.org/man/reflector.1#EXAMPLES
 
 ---
 

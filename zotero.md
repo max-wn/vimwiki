@@ -5,6 +5,7 @@ A tool to help you collect, organize, cite, and share your research sources.
 ### links
 
 #### zotero
+
 1. https://www.zotero.org/
 2. https://aur.archlinux.org/packages/zotero
 3. https://github.com/zotero/zotero?tab=readme-ov-file
@@ -12,6 +13,7 @@ A tool to help you collect, organize, cite, and share your research sources.
 5. https://retorque.re/zotero-better-bibtex/installation/ (plugin for bibtex)
 
 #### obsidian
+
 1. https://obsidian.md/
 2. https://archlinux.org/packages/extra/x86_64/obsidian/
 3. https://github.com/obsidianmd

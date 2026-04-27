@@ -2,14 +2,11 @@
 
 ### convention
 
-**dir example**
+dir example in `dotfiles` repo:
 
-alacritty
-|-.config
-  |-alacritty
-    |-alacritty.toml
+`alacritty/.config/alacritty/alacritty.toml`
 
-**command**
+command:
 
 ```sh
 stow alacritty
